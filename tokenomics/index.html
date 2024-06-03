@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <title>UNLOK Loyalty | Tokenomics</title><!-- HEAD_svelte-9afuw6_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=IBM+Plex+Mono:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1687548555125UNLOK%20-%20Transparent%20Icon_FINAL.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Unleash the Power of Blockchain Rewards">
+    <meta name="keywords" content="Blockchain, Crypto, Cryptocurrency, Unlok, Rewards, Staking, Loyalty Program, Earn, Redeem">
+    <meta name="author" content="Unlok Loyalty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        :root {
+            /* Fonts  */
+            --font-heading: 'Fraunces', serif;
+            --font-body: 'IBM Plex Mono', monospace;
+            --font-text: 'Work Sans', sans-serif;
+
+            /* Colors */
+            --color-Y500: #E9D90A;
+            --color-Y400: #F6E500;
+            --color-Y300: #F7D254;
+            --color-Y200: #FFF587;
+            --color-Y100: #FFFCDA;
+
+            --color-P500: #E82884;
+            --color-P400: #FF4FA3;
+            --color-P300: #FF74B7;
+            --color-P200: #FFB1D7;
+            --color-P100: #FFD6E9;
+
+            --color-T500: #50ADBE;
+            --color-T400: #69C9DB;
+            --color-T300: #A8E1EC;
+            --color-T200: #C2F1FA;
+            --color-T100: #E2FAFF;
+
+            --color-G500: #C8C9DC;
+            --color-G400: #D5D7EF;
+            --color-G300: #E6E7FB;
+            --color-G200: #EEF2FD;
+            --color-G100: #F4F9FC;
+
+            --color-black: #000000;
+            --color-white: #FFFFFF;
+
+            /* Base values */
+            --color-primary: var(--color-Y400);
+            --color-secondary: var(--color-P400);
+            --color-tertiary: var(--color-black);
+            --color-tertiary: var(--color-white);
+
+            /* --color: var(--color-base);
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --border-color: #eee;
+  --background: white; */
+            --border: 0.851905px solid var(--color-black);
+            --border-radius: 4.25952px;
+            --max-content-width-mobile: 768px;
+            --max-content-width-small-desktop: 900px;
+            --max-content-width: 1200px;
+            --page-padding-desktop: 90px 80px;
+            --page-padding-small-desktop: 120px 60px;
+            --page-padding-mobile: 90px 18px;
+
+            --hero-padding-desktop: 150px 80px 90px 80px;
+            --hero-padding-large-desktop: 200px 80px 90px 80px;
+
+            --hero-padding-mobile: 100px 18px 90px 18px;
+            --content-padding: 0px 50px;
+
+        }
+
+
+        #page a {
+            color: var(--color-black);
+        }
+
+
+        #page h1,
+        #page h2,
+        #page h3,
+        #page h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--color-black);
+        }
+
+
+        #page h1 {
+            font-size: 33px;
+            line-height: 39px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h1 {
+                font-size: 67px;
+                line-height: 69px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h1 {
+                font-size: 83px;
+                line-height: 93px
+            }
+        }
+
+
+        #page h2 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h2 {
+                font-size: 55px;
+                line-height: 65px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h2 {
+                font-size: 65px;
+                line-height: 75px
+            }
+        }
+
+
+        #page h3 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h3 {
+                font-size: 45px;
+                line-height: 57px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h3 {
+                font-size: 55px;
+                line-height: 68px
+            }
+        }
+
+
+        #page h4 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h4 {
+                font-size: 37px;
+                line-height: 50px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h4 {
+                font-size: 45px;
+                line-height: 58px
+            }
+        }
+
+
+        #page h5,
+        #page h6,
+        #page .h650,
+        #page .h700,
+        #page .h800,
+        #page .h900,
+        #page .h950 {
+            font-family: var(--font-body);
+            color: var(--color-black);
+        }
+
+
+        #page h5 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h5 {
+                font-size: 30px;
+                line-height: 39px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h5 {
+                font-size: 30px;
+                line-height: 39px
+            }
+        }
+
+
+        #page h6 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h6 {
+                font-size: 21px;
+                line-height: 29px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h6 {
+                font-size: 25px;
+                line-height: 33px
+            }
+        }
+
+
+        #page .h650 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h650 {
+                font-size: 21px;
+                line-height: 29px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h650 {
+                font-size: 25px;
+                line-height: 33px
+            }
+        }
+
+
+        #page .h700 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h700 {
+                font-size: 16px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h700 {
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .h800 {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h800 {
+                font-size: 12px;
+                line-height: 16px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h800 {
+                font-size: 17px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .h900 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h900 {
+                font-size: 14px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h900 {
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .h950 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h950 {
+                font-size: 14px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h950 {
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page p {
+            font-family: var(--font-text);
+            font-weight: 400;
+            color: var(--color-black);
+        }
+
+
+        #page .p-large {
+            font-size: 17px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-large {
+                font-size: 18px;
+                line-height: 28px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-large {
+                font-size: 20px;
+                line-height: 31px
+            }
+        }
+
+
+        #page .p-medium {
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-medium {
+                font-size: 15px;
+                line-height: 22px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-medium {
+                font-size: 17px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .p-small {
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-small {
+                font-size: 15px;
+                line-height: 22px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-small {
+                font-size: 14px;
+                line-height: 18px
+            }
+        }
+
+
+        #page .link {
+            color: var(--color-P500);
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+
+
+        #page .link:hover {
+            -webkit-text-decoration-line: unset;
+            text-decoration-line: unset;
+        }
+
+
+        #page .link:active {
+            color: var(--color-P300);
+        }
+
+
+        #page .link:visited {
+            color: var(--color-P500);
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+
+
+        #page .tag-pink-large,
+        #page .tag-yellow-large,
+        #page .tag-lightyellow-large {
+            border-width: 2px;
+            border: var(--border);
+            border-radius: var(--border-radius);
+            padding: 0px 12.7786px;
+            gap: 8.52px;
+            height: 34.52px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .tag-pink-large,
+            #page .tag-yellow-large,
+            #page .tag-lightyellow-large {
+                height: 41.52px
+            }
+        }
+
+
+        #page .tag-pink-small,
+        #page .tag-yellow-small,
+        #page .tag-lightyellow-small {
+            border-width: 2px;
+            border: var(--border);
+            border-radius: var(--border-radius);
+            padding: 0px 10px;
+            gap: 8.52px;
+            height: 32px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .tag-pink-small,
+            #page .tag-yellow-small,
+            #page .tag-lightyellow-small {
+                height: 37px
+            }
+        }
+
+
+        #page .tag-pink-large {
+            background-color: var(--color-secondary);
+        }
+
+
+        #page .tag-pink-small {
+            background-color: var(--color-secondary);
+        }
+
+
+        #page .tag-yellow-large {
+            background-color: var(--color-primary);
+        }
+
+
+        #page .tag-yellow-small {
+            background-color: var(--color-primary);
+        }
+
+
+        #page .tag-lightyellow-large {
+            background-color: var(--color-Y100);
+        }
+
+
+        #page .tag-lightyellow-small {
+            background-color: var(--color-Y100);
+        }
+
+
+        #page .primary-large-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            /* height: 60px; */
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 20px 35px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            border: 2px solid var(--color-black);
+            transition: all 0.5s;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .primary-large-button {
+                padding: 25px 40px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .primary-large-button:hover {
+            background: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+
+
+        #page .primary-large-button:active {
+            margin: -1px;
+            border: 3px solid var(--color-black);
+        }
+
+
+        #page .primary-small-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            /* height: 40px; */
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 10px 25px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            transition: all 0.5s;
+            border: 2px solid var(--color-black);
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .primary-small-button {
+                padding: 15px 40px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .primary-small-button:hover {
+            background: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+
+
+        #page .primary-small-button:active {
+            margin: -1px;
+            border: 3px solid var(--color-black);
+        }
+
+
+        #page .secondary-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            height: 52px;
+            border: 3px solid var(--color-black);
+            color: var(--color-black);
+            transition: all 0.5s;
+            padding: 15px 34px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            background: transparent;
+        }
+
+
+        #page .secondary-button:hover {
+            background: var(--color-black);
+            color: var(--color-white);
+        }
+
+
+        #page .secondary-button:active {
+            background: var(--color-G500);
+            border-color: var(--color-G500);
+        }
+    </style><!-- HEAD_svelte-9afuw6_END -->
+    <style>
+        header.svelte-jc1u8d.svelte-jc1u8d {
+            width: 100%;
+            max-width: 1700px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 0;
+            z-index: 7;
+            background-color: transparent
+        }
+
+        a#nav-item.svelte-jc1u8d.svelte-jc1u8d:hover {
+            color: var(--color-P500);
+            transition: all 0.2s
+        }
+
+        a.inactive-link.svelte-jc1u8d.svelte-jc1u8d {
+            padding: 5px 0px
+        }
+
+        @media(max-width: 767px) {
+            a.inactive-link.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 5px 10px
+            }
+        }
+
+        a.active-link.svelte-jc1u8d.svelte-jc1u8d {
+            color: var(--color-black) !important;
+            border-bottom: 2px solid var(--color-black) !important;
+            padding: 5px 0px
+        }
+
+        @media(max-width: 767px) {
+            a.active-link.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 5px 10px;
+                background-color: var(--color-G200) !important;
+                border-bottom: 1px solid var(--color-black) !important
+            }
+        }
+
+        .header-container.svelte-jc1u8d.svelte-jc1u8d {
+            max-width: 1440px;
+            margin: auto;
+            padding: var(--page-padding-mobile);
+            padding-top: 0;
+            padding-bottom: 0;
+            position: relative
+        }
+
+        @media(min-width: 768px) {
+            .header-container.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 0px 40px
+            }
+        }
+
+        @media(min-width: 1440px) {}
+
+        @media(max-width: 767px) {
+            img.svelte-jc1u8d.svelte-jc1u8d {
+                width: 90px
+            }
+        }
+
+        .section-container.svelte-jc1u8d.svelte-jc1u8d {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem
+        }
+
+        @media(min-width: 768px) {}
+
+        @media(min-width: 1440px) {}
+
+        .logo.svelte-jc1u8d.svelte-jc1u8d {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-jc1u8d.svelte-jc1u8d {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-jc1u8d nav.svelte-jc1u8d {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.95rem
+        }
+
+        @media(min-width: 768px) {
+            .desktop-nav.svelte-jc1u8d.svelte-jc1u8d {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-jc1u8d.svelte-jc1u8d {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 768px) {
+            .mobile-nav.svelte-jc1u8d.svelte-jc1u8d {
+                display: none
+            }
+        }
+
+        #popup.svelte-jc1u8d.svelte-jc1u8d {
+            color: var(--color-black);
+            font-size: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            inset: 0rem 0rem 0rem 6rem;
+            height: 100vh;
+            bottom: initial;
+            padding: 2rem;
+            padding-top: 5rem;
+            z-index: 3;
+            box-shadow: -10px 0px 16px 4px rgba(0, 0, 0, 0.13)
+        }
+
+        #popup.svelte-jc1u8d button#close.svelte-jc1u8d {
+            position: absolute;
+            right: 1.5rem;
+            top: 2rem
+        }
+
+        .header-wrapper.svelte-czgz66.svelte-czgz66 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            margin: auto;
+            padding: var(--hero-padding-mobile);
+            padding-bottom: 0
+        }
+
+        @media(min-width: 768px) {
+            .header-wrapper.svelte-czgz66.svelte-czgz66 {
+                padding: var(--hero-padding-desktop);
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding-bottom: 0
+                    /* margin-top: -77px; */
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .header-wrapper.svelte-czgz66.svelte-czgz66 {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 90px
+                    /* height: 900px */
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .header-wrapper.svelte-czgz66.svelte-czgz66 {
+                max-width: var(--max-content-width);
+                padding: var(--hero-padding-large-desktop);
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                height: unset;
+                background-color: transparent
+                    /* margin-top: -33px; */
+            }
+        }
+
+        .hero-text-container1.svelte-czgz66.svelte-czgz66 {
+            background-color: var(--color-P400);
+            border-left: 2px solid var(--color-black);
+            border-radius: 10px;
+            padding: 3.13918px 0px;
+            margin: auto;
+            margin-bottom: 7.92px;
+            position: relative;
+            height: 45px;
+            width: 295px
+        }
+
+        .hero-text-container1.svelte-czgz66>h1.svelte-czgz66 {
+            position: absolute;
+            left: 10px;
+            width: 310px
+        }
+
+        @media(min-width: 1024px) {
+            .hero-text-container1.svelte-czgz66.svelte-czgz66 {
+                height: 85px;
+                border-radius: 15px;
+                width: 650px;
+                margin-bottom: 19px
+            }
+
+            .hero-text-container1.svelte-czgz66>h1.svelte-czgz66 {
+                width: 680px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-text-container1.svelte-czgz66.svelte-czgz66 {
+                border-radius: 15px;
+                width: 725px;
+                height: 109px;
+                margin-bottom: 19px
+            }
+
+            .hero-text-container1.svelte-czgz66>h1.svelte-czgz66 {
+                width: 870px
+            }
+        }
+
+        .secondary-button.svelte-czgz66.svelte-czgz66 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 30px;
+            width: 152px
+        }
+
+        .lottie-1.svelte-czgz66.svelte-czgz66 {
+            position: absolute;
+            bottom: -30px;
+            height: 250px;
+            width: 343px;
+            overflow: hidden;
+            left: 50%;
+            top: 60px;
+            transform: translate(-50%)
+        }
+
+        @media(min-width: 768px) {
+            .lottie-1.svelte-czgz66.svelte-czgz66 {
+                width: 528px;
+                top: 50px
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .lottie-1.svelte-czgz66.svelte-czgz66 {
+                width: 847px;
+                height: 400px;
+                top: 36px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .lottie-1.svelte-czgz66.svelte-czgz66 {
+                top: 80px;
+                width: 847px;
+                height: 400px
+            }
+        }
+
+        .lottie-2.svelte-czgz66.svelte-czgz66 {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 3;
+            width: 83px;
+            height: 88px
+        }
+
+        @media(min-width: 768px) {
+            .lottie-2.svelte-czgz66.svelte-czgz66 {
+                bottom: 120px;
+                right: 80px
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .lottie-2.svelte-czgz66.svelte-czgz66 {
+                width: 120px;
+                height: 120px;
+                right: 20px;
+                top: 20px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .lottie-2.svelte-czgz66.svelte-czgz66 {
+                width: 120px;
+                height: 120px;
+                right: 150px;
+                bottom: 200px
+            }
+        }
+
+        .lottie-wrapper.svelte-czgz66.svelte-czgz66 {
+            position: relative;
+            margin-top: 58px;
+            width: 340px;
+            height: 222px
+        }
+
+        @media(min-width: 768px) {
+            .lottie-wrapper.svelte-czgz66.svelte-czgz66 {
+                width: 528px;
+                height: 223px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .lottie-wrapper.svelte-czgz66.svelte-czgz66 {
+                width: 847px;
+                height: 357px
+            }
+        }
+
+        @media(min-width: 1440px) {}
+
+        img#rewards.svelte-czgz66.svelte-czgz66 {
+            width: 210px;
+            height: 245px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2
+        }
+
+        @media(min-width: 1024px) {
+            img#rewards.svelte-czgz66.svelte-czgz66 {
+                width: 256px;
+                height: 393px;
+                top: -20px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            img#rewards.svelte-czgz66.svelte-czgz66 {
+                width: 288px;
+                height: 393px;
+                top: 0
+            }
+        }
+
+        h4.svelte-czgz66.svelte-czgz66 {
+            text-align: center
+        }
+
+        .content.svelte-iy3roc p {
+            padding-bottom: 30px
+        }
+
+        .content.svelte-iy3roc h3 {
+            padding-bottom: 30px;
+            text-align: center
+        }
+
+        p#content-paragraph-1.svelte-iy3roc {
+            text-align: center
+        }
+
+        @media(min-width: 1440px) {
+            p#content-paragraph-1.svelte-iy3roc {
+                padding-bottom: 70px
+            }
+        }
+
+        @media(min-width: 1440px) {}
+
+        @media(min-width: 1440px) {}
+
+        @media(min-width: 1440px) {}
+
+        .tag-pink-large.svelte-iy3roc {
+            margin-bottom: 10px
+        }
+
+        @media(max-width: 767px) {
+            .tag-pink-large.svelte-iy3roc {
+                padding: 10px 10px !important;
+                display: block;
+                overflow: auto;
+                height: unset !important;
+                overflow: hidden;
+                width: auto !important
+            }
+        }
+
+        .container.svelte-iy3roc {
+            border-top: 2px solid var(--color-black);
+            border-black: 2px solid var(--color-black);
+            background-color: var(--color-G100);
+            padding: var(--page-padding-mobile);
+            padding-top: 90px;
+            padding-bottom: 90px;
+            width: 100%
+        }
+
+        @media(min-width: 768px) {
+            .container.svelte-iy3roc {
+                padding: var(--page-padding-desktop);
+                padding-top: 90px;
+                padding-bottom: 90px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .container.svelte-iy3roc {
+                padding: 0px;
+                padding-top: 140px;
+                padding-bottom: 140px;
+                margin: auto
+            }
+        }
+
+        @media(min-width: 768px) {
+            .wrapper.svelte-iy3roc {
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding: var(--page-padding-desktop);
+                padding-top: 0;
+                padding-bottom: 0
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-iy3roc {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-iy3roc {
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                max-width: 900px;
+                margin: auto
+            }
+        }
+
+        .content.svelte-1b6g14u p {
+            padding-bottom: 60px
+        }
+
+        .content.svelte-1b6g14u h3 {
+            padding-bottom: 30px;
+            text-align: center
+        }
+
+        p#content-paragraph-1.svelte-1b6g14u {
+            text-align: center
+        }
+
+        @media(min-width: 1440px) {
+            p#content-paragraph-1.svelte-1b6g14u {
+                padding-bottom: 70px
+            }
+        }
+
+        .title.svelte-1b6g14u {
+            margin-bottom: 15px
+        }
+
+        .multi-line.svelte-1b6g14u {
+            padding-bottom: 10px !important
+        }
+
+        .secondary-button.svelte-1b6g14u {
+            padding-top: 15px;
+            padding-bottom: 15px
+        }
+
+        .tag-yellow-large.svelte-1b6g14u {
+            margin-bottom: 15px
+        }
+
+        @media(max-width: 767px) {
+            .tag-yellow-large.svelte-1b6g14u {
+                padding: 30px 10px !important;
+                width: auto !important
+            }
+        }
+
+        .container.svelte-1b6g14u {
+            border-top: 2px solid var(--color-black);
+            border-black: 2px solid var(--color-black);
+            background-color: var(--color-white);
+            padding: var(--page-padding-mobile);
+            padding-top: 90px;
+            padding-bottom: 90px;
+            width: 100%
+        }
+
+        @media(min-width: 768px) {
+            .container.svelte-1b6g14u {
+                padding: var(--page-padding-desktop);
+                padding-top: 90px;
+                padding-bottom: 90px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .container.svelte-1b6g14u {
+                padding: 0px;
+                padding-top: 140px;
+                padding-bottom: 140px;
+                margin: auto
+            }
+        }
+
+        @media(min-width: 768px) {
+            .wrapper.svelte-1b6g14u {
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding: var(--page-padding-desktop);
+                padding-top: 0;
+                padding-bottom: 0
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-1b6g14u {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-1b6g14u {
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                max-width: 900px;
+                margin: auto
+            }
+        }
+
+        .section-container.svelte-14fdjq7.svelte-14fdjq7 {
+            display: grid;
+            background-color: var(--color-black);
+            padding: 65px 40px;
+            gap: 30px;
+            justify-content: center
+        }
+
+        @media(max-width: 768px) {
+            nav.svelte-14fdjq7.svelte-14fdjq7 {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 250px;
+                margin: auto;
+                justify-content: center
+            }
+        }
+
+        h6#links.svelte-14fdjq7 a.svelte-14fdjq7 {
+            color: var(--color-primary);
+            -webkit-text-decoration-line: none;
+            text-decoration-line: none
+        }
+
+        h6#links.svelte-14fdjq7 a.svelte-14fdjq7:hover {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline
+        }
+
+        p.svelte-14fdjq7.svelte-14fdjq7 {
+            color: var(--color-white) !important
+        }
+
+        span.svelte-14fdjq7.svelte-14fdjq7 {
+            display: flex;
+            justify-content: center
+        }
+
+        nav.svelte-14fdjq7.svelte-14fdjq7 {
+            display: flex;
+            gap: 1rem
+        }
+
+        nav.svelte-14fdjq7 .link.svelte-14fdjq7 {
+            border-color: transparent
+        }
+
+        nav.svelte-14fdjq7 .link.svelte-14fdjq7:hover {
+            border-color: initial
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-a589da36">
+        <header class="svelte-jc1u8d">
+            <div class="header-container svelte-jc1u8d">
+                <div class="section-container svelte-jc1u8d">
+                    <div class="desktop-nav svelte-jc1u8d"><a href="/" class="logo svelte-jc1u8d"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686165013778unlok-logo2%20copy.svg" alt="logo" class="svelte-jc1u8d"></a>
+                        <nav style="display: flex; align-items:center;" class="svelte-jc1u8d">
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/personal">Personal</a>
+                            </h6>
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/business">Business</a>
+                            </h6>
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/investor">Investor</a>
+                            </h6>
+                            <a class="primary-small-button" id="nav" href="/portal">Get Started</a>
+                        </nav>
+                    </div>
+                    <div class="mobile-nav svelte-jc1u8d"><a href="/" class="logo svelte-jc1u8d"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686165013778unlok-logo2%20copy.svg" alt="logo" class="svelte-jc1u8d"></a>
+                        <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="37" height="37" viewBox="0 0 24 24" style="color:black;" class="iconify iconify--eva"><!-- HTML_TAG_START -->
+                                <g id="iconifySvelte0">
+                                    <g id="iconifySvelte1">
+                                        <g id="iconifySvelte2" fill="currentColor">
+                                            <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
+                                            <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
+                                            <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
+                                        </g>
+                                    </g>
+                                </g><!-- HTML_TAG_END -->
+                            </svg></button>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-b2c952f8">
+        <section>
+            <div class="header-wrapper svelte-czgz66">
+                <div class="hero-text-container1 svelte-czgz66">
+                    <h1 class="svelte-czgz66">Staking at UNLOK:</h1>
+                </div>
+                <h4 class="svelte-czgz66">Unlocking High Stakes and High Rewards</h4>
+                <a class="secondary-button svelte-czgz66" href="/">Whitepaper</a>
+
+                <div class="lottie-wrapper svelte-czgz66"><img id="rewards" src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686607590000reward-tiers-app%20copy%202.svg" alt="Reward Tiers" class="svelte-czgz66">
+                    <lottie-player autoplay loop mode="normal" class="lottie-2 svelte-czgz66" src="{&quot;nm&quot;:&quot;donat charts&quot;,&quot;ddd&quot;:0,&quot;h&quot;:500,&quot;w&quot;:500,&quot;meta&quot;:{&quot;g&quot;:&quot;@lottiefiles/toolkit-js 0.26.1&quot;},&quot;layers&quot;:[{&quot;ty&quot;:3,&quot;nm&quot;:&quot;Null 112&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:300,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[50,50,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[112.5,112.5,100],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[250,250,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:1,&quot;y&quot;:1},&quot;s&quot;:[0],&quot;t&quot;:0},{&quot;s&quot;:[99.667],&quot;t&quot;:299}]},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;ind&quot;:1},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 3&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:300,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[250,250,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:1,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.966,&quot;y&quot;:0.706},&quot;s&quot;:[0,0,100],&quot;t&quot;:4},{&quot;o&quot;:{&quot;x&quot;:0.03,&quot;y&quot;:1.958},&quot;i&quot;:{&quot;x&quot;:0.486,&quot;y&quot;:2.002},&quot;s&quot;:[92.051,92.051,100],&quot;t&quot;:10.25},{&quot;o&quot;:{&quot;x&quot;:0.289,&quot;y&quot;:2.161},&quot;i&quot;:{&quot;x&quot;:0.673,&quot;y&quot;:1},&quot;s&quot;:[111.264,111.264,100],&quot;t&quot;:20.25},{&quot;s&quot;:[100,100,100],&quot;t&quot;:42.75}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[50,50,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill&quot;,&quot;nm&quot;:&quot;Fill&quot;,&quot;ix&quot;:1,&quot;en&quot;:1,&quot;ef&quot;:[{&quot;ty&quot;:10,&quot;mn&quot;:&quot;ADBE Fill-0001&quot;,&quot;nm&quot;:&quot;Fill Mask&quot;,&quot;ix&quot;:1,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:1}},{&quot;ty&quot;:7,&quot;mn&quot;:&quot;ADBE Fill-0007&quot;,&quot;nm&quot;:&quot;All Masks&quot;,&quot;ix&quot;:2,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:2}},{&quot;ty&quot;:2,&quot;mn&quot;:&quot;ADBE Fill-0002&quot;,&quot;nm&quot;:&quot;Color&quot;,&quot;ix&quot;:3,&quot;v&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:1,&quot;y&quot;:1},&quot;s&quot;:[0.1765,0.1765,0.1765],&quot;t&quot;:0},{&quot;s&quot;:[0.1765,0.1765,0.1765],&quot;t&quot;:299}]}},{&quot;ty&quot;:7,&quot;mn&quot;:&quot;ADBE Fill-0006&quot;,&quot;nm&quot;:&quot;Invert&quot;,&quot;ix&quot;:4,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0003&quot;,&quot;nm&quot;:&quot;Horizontal Feather&quot;,&quot;ix&quot;:5,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0004&quot;,&quot;nm&quot;:&quot;Vertical Feather&quot;,&quot;ix&quot;:6,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0005&quot;,&quot;nm&quot;:&quot;Opacity&quot;,&quot;ix&quot;:7,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:1,&quot;ix&quot;:7}}]}],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Group 3&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:2,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;Path 1&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[0,0],[0.893,-2.35],[21.511,0],[6.307,2.85],[1.791,-1.794],[0,0],[-3.27,-2.102],[-19.769,0],[-9.802,44.709],[3.902,0]],&quot;o&quot;:[[-2.517,0],[-7.216,19.011],[-7.361,0],[-2.312,-1.043],[0,0],[-2.749,2.749],[15.509,9.97],[47.611,0],[0.836,-3.811],[0,0]],&quot;v&quot;:[[32.454,-42.86],[26.811,-38.944],[-20.308,-6.381],[-40.97,-10.822],[-47.779,-9.62],[-75.086,17.688],[-74.024,27.097],[-20.308,42.859],[76.999,-35.421],[71.107,-42.86]]},&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.8353,0.8431,0.9373],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[271.12,305.813],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:2,&quot;parent&quot;:1},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 2&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:300,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[250,250,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:1,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.966,&quot;y&quot;:0.706},&quot;s&quot;:[0,0,100],&quot;t&quot;:2},{&quot;o&quot;:{&quot;x&quot;:0.03,&quot;y&quot;:1.958},&quot;i&quot;:{&quot;x&quot;:0.486,&quot;y&quot;:2.002},&quot;s&quot;:[92.051,92.051,100],&quot;t&quot;:8.25},{&quot;o&quot;:{&quot;x&quot;:0.289,&quot;y&quot;:2.161},&quot;i&quot;:{&quot;x&quot;:0.673,&quot;y&quot;:1},&quot;s&quot;:[111.264,111.264,100],&quot;t&quot;:18.25},{&quot;s&quot;:[100,100,100],&quot;t&quot;:40.75}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[50,50,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill&quot;,&quot;nm&quot;:&quot;Fill&quot;,&quot;ix&quot;:1,&quot;en&quot;:1,&quot;ef&quot;:[{&quot;ty&quot;:10,&quot;mn&quot;:&quot;ADBE Fill-0001&quot;,&quot;nm&quot;:&quot;Fill Mask&quot;,&quot;ix&quot;:1,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:1}},{&quot;ty&quot;:7,&quot;mn&quot;:&quot;ADBE Fill-0007&quot;,&quot;nm&quot;:&quot;All Masks&quot;,&quot;ix&quot;:2,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:2}},{&quot;ty&quot;:2,&quot;mn&quot;:&quot;ADBE Fill-0002&quot;,&quot;nm&quot;:&quot;Color&quot;,&quot;ix&quot;:3,&quot;v&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:1,&quot;y&quot;:1},&quot;s&quot;:[0.1765,0.1765,0.1765],&quot;t&quot;:0},{&quot;s&quot;:[0.1765,0.1765,0.1765],&quot;t&quot;:299}]}},{&quot;ty&quot;:7,&quot;mn&quot;:&quot;ADBE Fill-0006&quot;,&quot;nm&quot;:&quot;Invert&quot;,&quot;ix&quot;:4,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0003&quot;,&quot;nm&quot;:&quot;Horizontal Feather&quot;,&quot;ix&quot;:5,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0004&quot;,&quot;nm&quot;:&quot;Vertical Feather&quot;,&quot;ix&quot;:6,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0005&quot;,&quot;nm&quot;:&quot;Opacity&quot;,&quot;ix&quot;:7,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:1,&quot;ix&quot;:7}}]}],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Group 2&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:2,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;Path 1&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[0,0],[1.043,2.311],[0,7.36],[-19.013,7.218],[0,2.513],[0,0],[3.811,-0.839],[0,-47.607],[-9.968,-15.509],[-2.749,2.749]],&quot;o&quot;:[[1.793,-1.794],[-2.849,-6.307],[0,-21.508],[2.35,-0.89],[0,0],[0,-3.901],[-44.709,9.801],[0,19.768],[2.103,3.272],[0,0]],&quot;v&quot;:[[9.622,47.781],[10.824,40.969],[6.38,20.307],[38.945,-26.815],[42.859,-32.453],[42.859,-71.106],[35.421,-76.997],[-42.859,20.307],[-27.098,74.023],[-17.686,75.088]]},&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.8353,0.8431,0.9373],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[194.038,228.731],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:3,&quot;parent&quot;:1},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 1&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:300,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[250,250,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:1,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.966,&quot;y&quot;:0.706},&quot;s&quot;:[0,0,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.03,&quot;y&quot;:1.958},&quot;i&quot;:{&quot;x&quot;:0.486,&quot;y&quot;:2.002},&quot;s&quot;:[92.051,92.051,100],&quot;t&quot;:6.25},{&quot;o&quot;:{&quot;x&quot;:0.289,&quot;y&quot;:2.161},&quot;i&quot;:{&quot;x&quot;:0.673,&quot;y&quot;:1},&quot;s&quot;:[111.264,111.264,100],&quot;t&quot;:16.25},{&quot;s&quot;:[100,100,100],&quot;t&quot;:38.75}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[50,50,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill&quot;,&quot;nm&quot;:&quot;Fill&quot;,&quot;ix&quot;:1,&quot;en&quot;:1,&quot;ef&quot;:[{&quot;ty&quot;:10,&quot;mn&quot;:&quot;ADBE Fill-0001&quot;,&quot;nm&quot;:&quot;Fill Mask&quot;,&quot;ix&quot;:1,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:1}},{&quot;ty&quot;:7,&quot;mn&quot;:&quot;ADBE Fill-0007&quot;,&quot;nm&quot;:&quot;All Masks&quot;,&quot;ix&quot;:2,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:2}},{&quot;ty&quot;:2,&quot;mn&quot;:&quot;ADBE Fill-0002&quot;,&quot;nm&quot;:&quot;Color&quot;,&quot;ix&quot;:3,&quot;v&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:1,&quot;y&quot;:1},&quot;s&quot;:[0.102,0.7373,0.6118],&quot;t&quot;:0},{&quot;s&quot;:[0.102,0.7373,0.6118],&quot;t&quot;:299}]}},{&quot;ty&quot;:7,&quot;mn&quot;:&quot;ADBE Fill-0006&quot;,&quot;nm&quot;:&quot;Invert&quot;,&quot;ix&quot;:4,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0003&quot;,&quot;nm&quot;:&quot;Horizontal Feather&quot;,&quot;ix&quot;:5,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0004&quot;,&quot;nm&quot;:&quot;Vertical Feather&quot;,&quot;ix&quot;:6,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6}},{&quot;ty&quot;:0,&quot;mn&quot;:&quot;ADBE Fill-0005&quot;,&quot;nm&quot;:&quot;Opacity&quot;,&quot;ix&quot;:7,&quot;v&quot;:{&quot;a&quot;:0,&quot;k&quot;:1,&quot;ix&quot;:7}}]}],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Group 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:2,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;Path 1&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[-2.36,-0.897],[-5.112,-13.443],[-2.523,0],[0,0],[0.834,3.811],[37.822,8.292],[0,-3.901],[0,0]],&quot;o&quot;:[[13.44,5.109],[0.896,2.358],[0,0],[3.901,0],[-8.296,-37.82],[-3.814,-0.836],[0,0],[0,2.523]],&quot;v&quot;:[[-38.173,8.916],[-8.916,38.174],[-3.266,42.113],[35.388,42.113],[41.279,34.671],[-34.671,-41.277],[-42.112,-35.387],[-42.112,3.266]]},&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,0.3098,0.6392],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[306.84,193.01],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:4,&quot;parent&quot;:1}],&quot;v&quot;:&quot;5.9.6&quot;,&quot;fr&quot;:30,&quot;op&quot;:300,&quot;ip&quot;:0,&quot;assets&quot;:[]}"></lottie-player>
+                    <lottie-player autoplay loop mode="normal" class="lottie-1 svelte-czgz66" src="{&quot;nm&quot;:&quot;191&quot;,&quot;ddd&quot;:0,&quot;h&quot;:1080,&quot;w&quot;:1920,&quot;meta&quot;:{&quot;g&quot;:&quot;@lottiefiles/toolkit-js 0.26.1&quot;},&quot;layers&quot;:[{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 24&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:true,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[64,64,100],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1758.375,746.625,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:45,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:6.7,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[41.75,41.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.6863,0.8,0.2627],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:1},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 23&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:true,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100,100],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1758.375,746.625,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:45,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:6.7,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[41.75,41.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:2},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 22&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:true,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[64,64,100],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1617.875,746.625,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:45,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:6.7,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[41.75,41.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.2392,0.7804,0.4196],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:3},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 21&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:true,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100,100],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1617.875,746.625,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:45,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:6.7,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[41.75,41.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:4},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 20&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:true,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[64,64,100],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1475.125,746.625,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:45,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:6.7,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[41.75,41.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.349,0.7725,0.7059],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:5},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 19&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:true,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100,100],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1475.125,746.625,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:45,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:6.7,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[41.75,41.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-776.125,204.625],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:6},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 38&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,449.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,490.4,100],&quot;t&quot;:112},{&quot;s&quot;:[100,449.4,100],&quot;t&quot;:247}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1759.5,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,0.3098,0.6392],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:7},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 37&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,218.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,243.4,100],&quot;t&quot;:56},{&quot;s&quot;:[100,218.4,100],&quot;t&quot;:117}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1618,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:8},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 36&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,333.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,366.4,100],&quot;t&quot;:77},{&quot;s&quot;:[100,333.4,100],&quot;t&quot;:166}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1475,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.9647,0.898,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:9},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 35&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,103.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,130.4,100],&quot;t&quot;:76},{&quot;s&quot;:[100,103.4,100],&quot;t&quot;:154}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1337,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,0.3098,0.6392],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:10},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 34&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,217.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,256.4,100],&quot;t&quot;:67},{&quot;s&quot;:[100,217.4,100],&quot;t&quot;:140}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1192,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:11},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 33&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,347.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,316.4,100],&quot;t&quot;:80},{&quot;s&quot;:[100,347.4,100],&quot;t&quot;:154}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1050.5,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.9647,0.898,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:12},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 32&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,247.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,199.4,100],&quot;t&quot;:87},{&quot;s&quot;:[100,247.4,100],&quot;t&quot;:180}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[907,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,0.3098,0.6392],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:13},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 31&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,98.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,141.4,100],&quot;t&quot;:60},{&quot;s&quot;:[100,98.4,100],&quot;t&quot;:127}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[762,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:14},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 30&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,299.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,361.4,100],&quot;t&quot;:75},{&quot;s&quot;:[100,299.4,100],&quot;t&quot;:154}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[613.5,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.9647,0.898,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:15},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 29&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,216.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,271.4,100],&quot;t&quot;:63},{&quot;s&quot;:[100,216.4,100],&quot;t&quot;:131}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[473.5,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,0.3098,0.6392],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:16},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 28&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,216.4,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,257.4,100],&quot;t&quot;:34},{&quot;s&quot;:[100,216.4,100],&quot;t&quot;:74}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[330.5,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:17},{&quot;ty&quot;:4,&quot;nm&quot;:&quot;Shape Layer 27&quot;,&quot;sr&quot;:1,&quot;st&quot;:0,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;hd&quot;:false,&quot;ddd&quot;:0,&quot;bm&quot;:0,&quot;hasMask&quot;:false,&quot;ao&quot;:0,&quot;ks&quot;:{&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-770.5,207,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:1,&quot;k&quot;:[{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,67,100],&quot;t&quot;:0},{&quot;o&quot;:{&quot;x&quot;:0.333,&quot;y&quot;:0},&quot;i&quot;:{&quot;x&quot;:0.667,&quot;y&quot;:1},&quot;s&quot;:[100,128,100],&quot;t&quot;:50},{&quot;s&quot;:[100,67,100],&quot;t&quot;:100}],&quot;ix&quot;:6},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[189.5,747,0],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:10},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:11}},&quot;ef&quot;:[],&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;Rectangle 1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;rc&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Rect&quot;,&quot;nm&quot;:&quot;Rectangle Path 1&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:3},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[107.5,91.75],&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;st&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Stroke&quot;,&quot;nm&quot;:&quot;Stroke 1&quot;,&quot;lc&quot;:1,&quot;lj&quot;:1,&quot;ml&quot;:4,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:4},&quot;w&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[1,1,1],&quot;ix&quot;:3}},{&quot;ty&quot;:&quot;fl&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Graphic - Fill&quot;,&quot;nm&quot;:&quot;Fill 1&quot;,&quot;c&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0.9647,0.898,0],&quot;ix&quot;:4},&quot;r&quot;:1,&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:5}},{&quot;ty&quot;:&quot;tr&quot;,&quot;a&quot;:{&quot;a&quot;:0,&quot;k&quot;:[0,0],&quot;ix&quot;:1},&quot;s&quot;:{&quot;a&quot;:0,&quot;k&quot;:[100,100],&quot;ix&quot;:3},&quot;sk&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:4},&quot;p&quot;:{&quot;a&quot;:0,&quot;k&quot;:[-771,161.125],&quot;ix&quot;:2},&quot;r&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:6},&quot;sa&quot;:{&quot;a&quot;:0,&quot;k&quot;:0,&quot;ix&quot;:5},&quot;o&quot;:{&quot;a&quot;:0,&quot;k&quot;:100,&quot;ix&quot;:7}}]}],&quot;ind&quot;:18}],&quot;v&quot;:&quot;5.8.1&quot;,&quot;fr&quot;:25,&quot;op&quot;:751,&quot;ip&quot;:0,&quot;fonts&quot;:{&quot;list&quot;:[{&quot;ascent&quot;:71.6088159177452,&quot;fClass&quot;:&quot;&quot;,&quot;fFamily&quot;:&quot;Arial&quot;,&quot;fStyle&quot;:&quot;Bold&quot;,&quot;fName&quot;:&quot;Arial-BoldMT&quot;,&quot;fPath&quot;:&quot;&quot;,&quot;fWeight&quot;:&quot;&quot;,&quot;origin&quot;:0}]},&quot;chars&quot;:[{&quot;ch&quot;:&quot;2&quot;,&quot;fFamily&quot;:&quot;Arial&quot;,&quot;size&quot;:45,&quot;style&quot;:&quot;Bold&quot;,&quot;w&quot;:55.62,&quot;data&quot;:{&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;2&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;2&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[0,0],[-1.156,1.302],[-4.33,3.972],[-1.66,2.116],[-1.156,2.914],[0,3.223],[4.036,3.809],[7.063,0],[4.297,-3.288],[0.813,-7.552],[0,0],[-1.693,1.726],[-2.865,0],[-1.644,-1.643],[0,-3.059],[1.888,-2.832],[6.184,-5.762],[2.604,-4.313],[0.52,-4.817],[0,0],[0,0]],&quot;o&quot;:[[0.716,-1.237],[1.155,-1.302],[4.329,-3.971],[2.506,-3.19],[1.155,-2.913],[0,-5.664],[-4.037,-3.809],[-6.445,0],[-4.297,3.288],[0,0],[0.26,-4.004],[1.692,-1.725],[2.897,0],[1.643,1.644],[0,2.767],[-1.4,2.051],[-7.683,7.129],[-2.605,4.314],[0,0],[0,0],[0,0]],&quot;v&quot;:[[23.34,-12.744],[26.147,-16.553],[34.375,-24.463],[43.359,-33.594],[48.853,-42.749],[50.586,-51.953],[44.531,-66.162],[27.881,-71.875],[11.768,-66.943],[4.102,-50.684],[17.773,-49.316],[20.703,-57.91],[27.539,-60.498],[34.351,-58.032],[36.816,-50.977],[33.984,-42.578],[22.607,-30.859],[7.178,-13.696],[2.49,0],[50.586,0],[50.586,-12.744]]},&quot;ix&quot;:2}}]}]}},{&quot;ch&quot;:&quot;5&quot;,&quot;fFamily&quot;:&quot;Arial&quot;,&quot;size&quot;:45,&quot;style&quot;:&quot;Bold&quot;,&quot;w&quot;:55.62,&quot;data&quot;:{&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;5&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;5&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[-4.167,-3.548],[-6.609,0],[-4.655,6.316],[0,5.892],[4.231,4.427],[6.087,0],[3.059,-1.53],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[-3.939,0],[-1.97,-2.197],[0,-4.395],[1.985,-2.327],[2.864,0],[1.92,1.807],[0.391,3.093],[0,0]],&quot;o&quot;:[[4.166,3.548],[8.268,0],[3.418,-4.622],[0,-7.063],[-4.232,-4.427],[-3.191,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[3.125,-3.483],[3.157,0],[1.969,2.197],[0,4.688],[-1.986,2.328],[-2.507,0],[-1.921,-1.807],[0,0],[0.813,5.99]],&quot;v&quot;:[[11.914,-4.102],[28.076,1.221],[47.461,-8.252],[52.588,-24.023],[46.24,-41.26],[30.762,-47.9],[21.387,-45.605],[23.535,-57.764],[49.414,-57.764],[49.414,-70.605],[13.135,-70.605],[6.104,-33.35],[17.236,-31.738],[27.832,-36.963],[35.522,-33.667],[38.477,-23.779],[35.498,-13.257],[28.223,-9.766],[21.582,-12.476],[18.115,-19.824],[4.443,-18.408]]},&quot;ix&quot;:2}}]}]}},{&quot;ch&quot;:&quot;0&quot;,&quot;fFamily&quot;:&quot;Arial&quot;,&quot;size&quot;:45,&quot;style&quot;:&quot;Bold&quot;,&quot;w&quot;:55.62,&quot;data&quot;:{&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;0&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:5,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;0&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[3.873,-4.883],[0,-13.477],[-4.265,-5.354],[-6.966,0],[-3.874,4.883],[0,13.542],[4.655,5.859],[6.934,0]],&quot;o&quot;:[[-4.688,5.925],[0,13.737],[4.264,5.355],[6.934,0],[4.688,-5.924],[0,-13.574],[-3.906,-4.948],[-6.934,0]],&quot;v&quot;:[[11.23,-64.551],[4.199,-35.449],[10.596,-6.812],[27.441,1.221],[43.652,-6.104],[50.684,-35.303],[43.701,-64.453],[27.441,-71.875]]},&quot;ix&quot;:2}},{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;0&quot;,&quot;ix&quot;:2,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[-1.286,-1.057],[-0.847,-3.141],[0,-8.398],[0.944,-3.516],[1.302,-1.057],[1.66,0],[1.286,1.042],[0.846,3.142],[0,8.398],[-0.945,3.548],[-1.302,1.058],[-1.66,0]],&quot;o&quot;:[[1.286,1.058],[0.846,3.142],[0,8.398],[-0.716,2.734],[-1.302,1.058],[-1.66,0],[-1.286,-1.041],[-0.847,-3.141],[0,-8.398],[0.716,-2.734],[1.302,-1.057],[1.66,0]],&quot;v&quot;:[[31.86,-58.911],[35.059,-52.612],[36.328,-35.303],[34.912,-17.432],[31.885,-11.743],[27.441,-10.156],[23.022,-11.719],[19.824,-17.993],[18.555,-35.303],[19.971,-53.223],[22.998,-58.911],[27.441,-60.498]]},&quot;ix&quot;:2}}]}]}},{&quot;ch&quot;:&quot;7&quot;,&quot;fFamily&quot;:&quot;Arial&quot;,&quot;size&quot;:45,&quot;style&quot;:&quot;Bold&quot;,&quot;w&quot;:55.62,&quot;data&quot;:{&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;7&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;7&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[0,0],[3.857,-10.286],[0.227,-9.895],[0,0],[-2.1,8.025],[-4.004,7.129],[-3.874,3.809],[0,0],[0,0],[0,0]],&quot;o&quot;:[[-6.445,8.105],[-3.857,10.287],[0,0],[-0.033,-6.315],[2.1,-8.024],[4.004,-7.129],[0,0],[0,0],[0,0],[0,0]],&quot;v&quot;:[[35.449,-57.861],[19.995,-30.273],[13.867,0],[27.1,0],[30.2,-21.509],[39.355,-44.238],[51.172,-60.645],[51.172,-70.605],[4.248,-70.605],[4.248,-57.861]]},&quot;ix&quot;:2}}]}]}},{&quot;ch&quot;:&quot;1&quot;,&quot;fFamily&quot;:&quot;Arial&quot;,&quot;size&quot;:45,&quot;style&quot;:&quot;Bold&quot;,&quot;w&quot;:50.1,&quot;data&quot;:{&quot;shapes&quot;:[{&quot;ty&quot;:&quot;gr&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Group&quot;,&quot;nm&quot;:&quot;1&quot;,&quot;ix&quot;:1,&quot;cix&quot;:2,&quot;np&quot;:3,&quot;it&quot;:[{&quot;ty&quot;:&quot;sh&quot;,&quot;bm&quot;:0,&quot;hd&quot;:false,&quot;mn&quot;:&quot;ADBE Vector Shape - Group&quot;,&quot;nm&quot;:&quot;1&quot;,&quot;ix&quot;:1,&quot;d&quot;:1,&quot;ks&quot;:{&quot;a&quot;:0,&quot;k&quot;:{&quot;c&quot;:true,&quot;i&quot;:[[0,0],[0,0],[4.199,-3.271],[3.58,-1.172],[0,0],[-5.013,4.688],[0,0],[0,0]],&quot;o&quot;:[[0,0],[-1.563,4.362],[-4.199,3.271],[0,0],[6.803,-2.246],[0,0],[0,0],[0,0]],&quot;v&quot;:[[39.355,-71.875],[28.223,-71.875],[19.58,-60.425],[7.91,-53.76],[7.91,-41.309],[25.635,-51.709],[25.635,0],[39.355,0]]},&quot;ix&quot;:2}}]}]}}],&quot;assets&quot;:[]}"></lottie-player>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-4a6fb994">
+        <div class="container svelte-iy3roc">
+            <div class="wrapper svelte-iy3roc">
+                <div class="section-container content svelte-iy3roc">
+                    <h3>Empowering Autonomy and Flexibility</h3>
+                    <p id="content-paragraph-1" class="p-large svelte-iy3roc">At UNLOK, we believe in empowering our users with flexibility, autonomy, and rewarding opportunities through our staking mechanism. Staking UNLOK tokens allow you to earn passive rewards and give you complete control over your staking preferences.</p>
+                    <section>
+                        <div class="tag-pink-large svelte-iy3roc">
+                            <h6 class="h700">Choose Your Staking Preferences</h6>
+                        </div>
+                        <p class="p-large">With UNLOK's staking feature, users have the freedom to choose the exact amount they want to stake and the duration of the staking period. By participating in staking, you can earn reflective rewards through token reflections. We've designed our platform with user convenience in mind, offering full interoperability and a streamlined UI.</p>
+
+                        <div class="tag-pink-large svelte-iy3roc">
+                            <h6 class="h700">Seamless Integration with Your Wallet</h6>
+                        </div>
+                        <p class="p-large">Through the UNLOK dashboard application, users can easily connect their wallets and access the embedded staking feature. This allows for a seamless and hassle-free staking experience directly within your wallet. Reflective rewards are calculated on a 24-hour basis and credited to your wallet at the end of each cycle.</p>
+
+                        <div class="tag-pink-large svelte-iy3roc">
+                            <h6 class="h700">Unlock Higher Yields with Fixed-Term Staking</h6>
+                        </div>
+                        <p class="p-large">For those seeking higher yields in exchange for longer staking periods, UNLOK offers a fixed-term staking feature. This enables users to lock their tokens for specific durations, such as 30 days, 3 months, 6 months, or 1 year, and receive proportional percentage yields at the end of the staking period. What's more, fixed staking comes with an added bonus that is exclusive to this staking option.</p>
+
+                        <div class="tag-pink-large svelte-iy3roc">
+                            <h6 class="h700">Unlock Higher Tiers, Greater Rewards</h6>
+                        </div>
+                        <p class="p-large">UNLOK rewards its loyal users through a tiered system, where different levels of held or staked tokens unlock access to exceptional yields and rewards. As you increase the number of tokens held or staked, you gain entry into higher tiers, enjoying even greater benefits and earning potential.</p>
+
+                        <div class="tag-pink-large svelte-iy3roc">
+                            <h6 class="h700">Unlock High Stakes and High Rewards</h6>
+                        </div>
+                        <p class="p-large">With UNLOK's staking feature, users have the freedom to choose the exact amount they want to stake and the duration of the staking period. By participating in staking, you can earn reflective rewards through token reflections. We've designed our platform with user convenience in mind, offering full interoperability and a streamlined UI.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-e3eacfa8">
+        <div class="container svelte-1b6g14u">
+            <div class="wrapper svelte-1b6g14u">
+                <div class="section-container content svelte-1b6g14u">
+                    <h3>UNLOK Tokenomics: Powering the Future of Blockchain Rewards</h3>
+                    <p id="content-paragraph-1" class="p-large svelte-1b6g14u">Our carefully designed token allocation ensures the seamless functioning and growth of the UNLOK ecosystem. Here's a breakdown of how UNLOK tokens will be distributed:</p>
+                    <section id="1">
+                        <div class="tag-yellow-large svelte-1b6g14u">
+                            <h6 class="h700">Unallocated Reserve: Flexibility and Adaptability </h6>
+                        </div>
+                        <h6 class="title h700 svelte-1b6g14u">9.25% - 700 MILLION tokens</h6>
+                        <p class="p-large">With UNLOK's staking feature, users have the freedom to choose the exact amount they want to stake and the duration of the staking period. By participating in staking, you can earn reflective rewards through token reflections. We've designed our platform with user convenience in mind, offering full interoperability and a streamlined UI.</p>
+                        <div></div>
+                    </section>
+                    <section id="2">
+                        <div class="tag-yellow-large svelte-1b6g14u">
+                            <h6 class="h700">Primer Token: Empowering Merchants</h6>
+                        </div>
+                        <h6 class="title h700 svelte-1b6g14u">5% - 175 MILLION tokens</h6>
+                        <p class="p-large">Primer tokens will be held in a multi-sig wallet and made immediately claimable. These tokens will be manually distributed to eligible merchants, fostering their active participation and engagement.</p>
+                        <div></div>
+                    </section>
+                    <section id="3">
+                        <div class="tag-yellow-large svelte-1b6g14u">
+                            <h6 class="h700">Founding Team: Recognizing Dedication</h6>
+                        </div>
+                        <h6 class="title h700 svelte-1b6g14u">4% - 437.5 MILLION tokens</h6>
+                        <p class="p-large">A portion of the token supply is allocated to compensate our dedicated executive team for their invaluable contributions to building and advancing the UNLOK ecosystem.</p>
+                        <div></div>
+                    </section>
+                    <section id="4">
+                        <div class="tag-yellow-large svelte-1b6g14u">
+                            <h6 class="h700">Marketing: Creating Impactful Brand Awareness</h6>
+                        </div>
+                        <h6 class="title h700 svelte-1b6g14u">3.75% - 131.25 MILLION tokens</h6>
+                        <p class="p-large">To reach a wider audience and create impactful brand awareness, a percentage of tokens is dedicated to supporting our comprehensive marketing efforts. This includes online and out-of-home advertising, strategic influencer partnerships, press releases, and engaging content writing services.</p>
+                        <div></div>
+                    </section>
+                    <section id="5">
+                        <div class="tag-yellow-large svelte-1b6g14u">
+                            <h6 class="h700">Employee Salaries: Valuing Our In-House Team</h6>
+                        </div>
+                        <h6 class="title h700 svelte-1b6g14u">3% - 306.25 MILLION tokens</h6>
+                        <p class="multi-line p-large svelte-1b6g14u">We value our in-house team members' hard work and dedication, who strive to make UNLOK an exceptional ecosystem. This token allocation rewards our talented employees for their continuous efforts. </p>
+                        <p class="p-large">By meticulously allocating UNLOK tokens, we ensure our blockchain rewards platform's sustainability, innovation, and long-term success. As we continue to grow and evolve, our tokenomics will adapt to meet the needs of our vibrant community.</p>
+                        <p class="p-large">*Note: The percentages and token amounts mentioned are for illustrative purposes and are subject to change based on the final token distribution plan.</p>
+                        <div></div>
+                    </section>
+                    <a class="secondary-button svelte-1b6g14u" href="/">Whitepaper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-e7721667">
+        <footer class="section-container svelte-14fdjq7">
+            <nav class="svelte-14fdjq7">
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="/tokenomics">Tokenomics</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="/privacy">Privacy Policy</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_blank" class="link svelte-14fdjq7" href="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/Whitepaper.pdf?t=2023-06-23T23%3A35%3A42.985Z">Whitepaper</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="https://unlokloyalty.com#contact-us">Contact Us</a>
+                </h6>
+            </nav>
+            <span class="svelte-14fdjq7">
+                <p id="copyright" class="p-small svelte-14fdjq7">© 2023 UNLOK. All rights reserved.</p>
+            </span>
+        </footer>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>

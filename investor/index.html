@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <title>UNLOK Loyalty | Investor</title><!-- HEAD_svelte-1si48bw_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=IBM+Plex+Mono:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1687548555125UNLOK%20-%20Transparent%20Icon_FINAL.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Unleash the Power of Blockchain Rewards">
+    <meta name="keywords" content="Blockchain, Crypto, Cryptocurrency, Unlok, Rewards, Staking, Loyalty Program, Earn, Redeem">
+    <meta name="author" content="Unlok Loyalty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        :root {
+            /* Fonts  */
+            --font-heading: 'Fraunces', serif;
+            --font-body: 'IBM Plex Mono', monospace;
+            --font-text: 'Work Sans', sans-serif;
+
+            /* Colors */
+            --color-Y500: #E9D90A;
+            --color-Y400: #F6E500;
+            --color-Y300: #F7D254;
+            --color-Y200: #FFF587;
+            --color-Y100: #FFFCDA;
+
+            --color-P500: #E82884;
+            --color-P400: #FF4FA3;
+            --color-P300: #FF74B7;
+            --color-P200: #FFB1D7;
+            --color-P100: #FFD6E9;
+
+            --color-T500: #50ADBE;
+            --color-T400: #69C9DB;
+            --color-T300: #A8E1EC;
+            --color-T200: #C2F1FA;
+            --color-T100: #E2FAFF;
+
+            --color-G500: #C8C9DC;
+            --color-G400: #D5D7EF;
+            --color-G300: #E6E7FB;
+            --color-G200: #EEF2FD;
+            --color-G100: #F4F9FC;
+
+            --color-black: #000000;
+            --color-white: #FFFFFF;
+
+            /* Base values */
+            --color-primary: var(--color-Y400);
+            --color-secondary: var(--color-P400);
+            --color-tertiary: var(--color-black);
+            --color-tertiary: var(--color-white);
+
+            /* --color: var(--color-base);
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --border-color: #eee;
+  --background: white; */
+            --border: 0.851905px solid var(--color-black);
+            --border-radius: 4.25952px;
+            --max-content-width-mobile: 768px;
+            --max-content-width-small-desktop: 900px;
+            --max-content-width: 1200px;
+            --page-padding-desktop: 90px 80px;
+            --page-padding-small-desktop: 120px 60px;
+            --page-padding-mobile: 90px 18px;
+
+            --hero-padding-desktop: 150px 80px 90px 80px;
+            --hero-padding-large-desktop: 200px 80px 90px 80px;
+
+            --hero-padding-mobile: 100px 18px 90px 18px;
+            --content-padding: 0px 50px;
+
+        }
+
+
+        #page a {
+            color: var(--color-black);
+        }
+
+
+        #page h1,
+        #page h2,
+        #page h3,
+        #page h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--color-black);
+        }
+
+
+        #page h1 {
+            font-size: 33px;
+            line-height: 39px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h1 {
+                font-size: 67px;
+                line-height: 69px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h1 {
+                font-size: 83px;
+                line-height: 93px
+            }
+        }
+
+
+        #page h2 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h2 {
+                font-size: 55px;
+                line-height: 65px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h2 {
+                font-size: 65px;
+                line-height: 75px
+            }
+        }
+
+
+        #page h3 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h3 {
+                font-size: 45px;
+                line-height: 57px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h3 {
+                font-size: 55px;
+                line-height: 68px
+            }
+        }
+
+
+        #page h4 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h4 {
+                font-size: 37px;
+                line-height: 50px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h4 {
+                font-size: 45px;
+                line-height: 58px
+            }
+        }
+
+
+        #page h5,
+        #page h6,
+        #page .h650,
+        #page .h700,
+        #page .h800,
+        #page .h900,
+        #page .h950 {
+            font-family: var(--font-body);
+            color: var(--color-black);
+        }
+
+
+        #page h5 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h5 {
+                font-size: 30px;
+                line-height: 39px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h5 {
+                font-size: 30px;
+                line-height: 39px
+            }
+        }
+
+
+        #page h6 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h6 {
+                font-size: 21px;
+                line-height: 29px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h6 {
+                font-size: 25px;
+                line-height: 33px
+            }
+        }
+
+
+        #page .h650 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h650 {
+                font-size: 21px;
+                line-height: 29px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h650 {
+                font-size: 25px;
+                line-height: 33px
+            }
+        }
+
+
+        #page .h700 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h700 {
+                font-size: 16px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h700 {
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .h800 {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h800 {
+                font-size: 12px;
+                line-height: 16px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h800 {
+                font-size: 17px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .h900 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h900 {
+                font-size: 14px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h900 {
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .h950 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h950 {
+                font-size: 14px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h950 {
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page p {
+            font-family: var(--font-text);
+            font-weight: 400;
+            color: var(--color-black);
+        }
+
+
+        #page .p-large {
+            font-size: 17px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-large {
+                font-size: 18px;
+                line-height: 28px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-large {
+                font-size: 20px;
+                line-height: 31px
+            }
+        }
+
+
+        #page .p-medium {
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-medium {
+                font-size: 15px;
+                line-height: 22px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-medium {
+                font-size: 17px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .p-small {
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-small {
+                font-size: 15px;
+                line-height: 22px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-small {
+                font-size: 14px;
+                line-height: 18px
+            }
+        }
+
+
+        #page .link {
+            color: var(--color-P500);
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+
+
+        #page .link:hover {
+            -webkit-text-decoration-line: unset;
+            text-decoration-line: unset;
+        }
+
+
+        #page .link:active {
+            color: var(--color-P300);
+        }
+
+
+        #page .link:visited {
+            color: var(--color-P500);
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+
+
+        #page .tag-pink-large,
+        #page .tag-yellow-large,
+        #page .tag-lightyellow-large {
+            border-width: 2px;
+            border: var(--border);
+            border-radius: var(--border-radius);
+            padding: 0px 12.7786px;
+            gap: 8.52px;
+            height: 34.52px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .tag-pink-large,
+            #page .tag-yellow-large,
+            #page .tag-lightyellow-large {
+                height: 41.52px
+            }
+        }
+
+
+        #page .tag-pink-small,
+        #page .tag-yellow-small,
+        #page .tag-lightyellow-small {
+            border-width: 2px;
+            border: var(--border);
+            border-radius: var(--border-radius);
+            padding: 0px 10px;
+            gap: 8.52px;
+            height: 32px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .tag-pink-small,
+            #page .tag-yellow-small,
+            #page .tag-lightyellow-small {
+                height: 37px
+            }
+        }
+
+
+        #page .tag-pink-large {
+            background-color: var(--color-secondary);
+        }
+
+
+        #page .tag-pink-small {
+            background-color: var(--color-secondary);
+        }
+
+
+        #page .tag-yellow-large {
+            background-color: var(--color-primary);
+        }
+
+
+        #page .tag-yellow-small {
+            background-color: var(--color-primary);
+        }
+
+
+        #page .tag-lightyellow-large {
+            background-color: var(--color-Y100);
+        }
+
+
+        #page .tag-lightyellow-small {
+            background-color: var(--color-Y100);
+        }
+
+
+        #page .primary-large-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            /* height: 60px; */
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 20px 35px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            border: 2px solid var(--color-black);
+            transition: all 0.5s;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .primary-large-button {
+                padding: 25px 40px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .primary-large-button:hover {
+            background: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+
+
+        #page .primary-large-button:active {
+            margin: -1px;
+            border: 3px solid var(--color-black);
+        }
+
+
+        #page .primary-small-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            /* height: 40px; */
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 10px 25px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            transition: all 0.5s;
+            border: 2px solid var(--color-black);
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .primary-small-button {
+                padding: 15px 40px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .primary-small-button:hover {
+            background: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+
+
+        #page .primary-small-button:active {
+            margin: -1px;
+            border: 3px solid var(--color-black);
+        }
+
+
+        #page .secondary-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            height: 52px;
+            border: 3px solid var(--color-black);
+            color: var(--color-black);
+            transition: all 0.5s;
+            padding: 15px 34px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            background: transparent;
+        }
+
+
+        #page .secondary-button:hover {
+            background: var(--color-black);
+            color: var(--color-white);
+        }
+
+
+        #page .secondary-button:active {
+            background: var(--color-G500);
+            border-color: var(--color-G500);
+        }
+    </style><!-- HEAD_svelte-1si48bw_END -->
+    <style>
+        header.svelte-jc1u8d.svelte-jc1u8d {
+            width: 100%;
+            max-width: 1700px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 0;
+            z-index: 7;
+            background-color: transparent
+        }
+
+        a#nav-item.svelte-jc1u8d.svelte-jc1u8d:hover {
+            color: var(--color-P500);
+            transition: all 0.2s
+        }
+
+        a.inactive-link.svelte-jc1u8d.svelte-jc1u8d {
+            padding: 5px 0px
+        }
+
+        @media(max-width: 767px) {
+            a.inactive-link.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 5px 10px
+            }
+        }
+
+        a.active-link.svelte-jc1u8d.svelte-jc1u8d {
+            color: var(--color-black) !important;
+            border-bottom: 2px solid var(--color-black) !important;
+            padding: 5px 0px
+        }
+
+        @media(max-width: 767px) {
+            a.active-link.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 5px 10px;
+                background-color: var(--color-G200) !important;
+                border-bottom: 1px solid var(--color-black) !important
+            }
+        }
+
+        .header-container.svelte-jc1u8d.svelte-jc1u8d {
+            max-width: 1440px;
+            margin: auto;
+            padding: var(--page-padding-mobile);
+            padding-top: 0;
+            padding-bottom: 0;
+            position: relative
+        }
+
+        @media(min-width: 768px) {
+            .header-container.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 0px 40px
+            }
+        }
+
+        @media(min-width: 1440px) {}
+
+        @media(max-width: 767px) {
+            img.svelte-jc1u8d.svelte-jc1u8d {
+                width: 90px
+            }
+        }
+
+        .section-container.svelte-jc1u8d.svelte-jc1u8d {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem
+        }
+
+        @media(min-width: 768px) {}
+
+        @media(min-width: 1440px) {}
+
+        .logo.svelte-jc1u8d.svelte-jc1u8d {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-jc1u8d.svelte-jc1u8d {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-jc1u8d nav.svelte-jc1u8d {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.95rem
+        }
+
+        @media(min-width: 768px) {
+            .desktop-nav.svelte-jc1u8d.svelte-jc1u8d {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-jc1u8d.svelte-jc1u8d {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 768px) {
+            .mobile-nav.svelte-jc1u8d.svelte-jc1u8d {
+                display: none
+            }
+        }
+
+        #popup.svelte-jc1u8d.svelte-jc1u8d {
+            color: var(--color-black);
+            font-size: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            inset: 0rem 0rem 0rem 6rem;
+            height: 100vh;
+            bottom: initial;
+            padding: 2rem;
+            padding-top: 5rem;
+            z-index: 3;
+            box-shadow: -10px 0px 16px 4px rgba(0, 0, 0, 0.13)
+        }
+
+        #popup.svelte-jc1u8d button#close.svelte-jc1u8d {
+            position: absolute;
+            right: 1.5rem;
+            top: 2rem
+        }
+
+        .hero-wrapper.svelte-517vep.svelte-517vep {
+            margin: auto;
+            padding: var(--hero-padding-mobile);
+            position: relative
+        }
+
+        @media(min-width: 768px) {
+            .hero-wrapper.svelte-517vep.svelte-517vep {
+                padding: var(--hero-padding-desktop);
+                margin: auto;
+                max-width: var(--max-content-width-mobile)
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .hero-wrapper.svelte-517vep.svelte-517vep {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0;
+                padding-bottom: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-wrapper.svelte-517vep.svelte-517vep {
+                max-width: var(--max-content-width);
+                padding: var(--hero-padding-large-desktop);
+                padding-left: 0;
+                padding-right: 0;
+                height: unset
+                    /* background-color: transparent; */
+            }
+        }
+
+        @media(min-width: 768px) {}
+
+        @media(min-width: 1024px) {}
+
+        @media(min-width: 1440px) {}
+
+        .hero-feature-container.svelte-517vep.svelte-517vep {
+            position: relative
+        }
+
+        .hero-image-1.svelte-517vep.svelte-517vep {
+            width: 240px;
+            margin-top: 10px;
+            padding-bottom: 100px
+        }
+
+        @media(min-width: 1024px) {
+            .hero-image-1.svelte-517vep.svelte-517vep {
+                width: 300px;
+                padding-bottom: 117px;
+                margin-top: 30px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-image-1.svelte-517vep.svelte-517vep {
+                width: 380px;
+                padding-bottom: 117px;
+                margin-top: 30px
+            }
+        }
+
+        .hero-image-2.svelte-517vep.svelte-517vep {
+            position: absolute;
+            width: 235px;
+            top: 44%;
+            transform: translate(2%, 0%);
+            z-index: 2;
+            margin-top: 15px
+        }
+
+        @media(min-width: 520px) {
+            .hero-image-2.svelte-517vep.svelte-517vep {
+                top: -37%;
+                left: 50%
+            }
+        }
+
+        @media(min-width: 768px) {
+            .hero-image-2.svelte-517vep.svelte-517vep {
+                width: 260px
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .hero-image-2.svelte-517vep.svelte-517vep {
+                width: 370px;
+                top: -45%
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-image-2.svelte-517vep.svelte-517vep {
+                width: 500px;
+                top: -37%
+            }
+        }
+
+        .hero-text-container1.svelte-517vep.svelte-517vep {
+            background-color: var(--color-primary);
+            border-left: 2px solid var(--color-black);
+            border-radius: 10px;
+            padding: 3.13918px 0px;
+            margin-bottom: 7.92px;
+            position: relative;
+            height: 45px;
+            width: 275px
+        }
+
+        .hero-text-container1.svelte-517vep>h1.svelte-517vep {
+            position: absolute;
+            left: 10px;
+            width: 310px
+        }
+
+        @media(min-width: 1024px) {
+            .hero-text-container1.svelte-517vep.svelte-517vep {
+                width: 555px;
+                height: 85px;
+                border-radius: 15px
+            }
+
+            .hero-text-container1.svelte-517vep>h1.svelte-517vep {
+                width: 580px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-text-container1.svelte-517vep.svelte-517vep {
+                width: 685px;
+                height: 109px;
+                margin-bottom: 19px;
+                border-radius: 15px
+            }
+
+            .hero-text-container1.svelte-517vep>h1.svelte-517vep {
+                width: 770px
+            }
+        }
+
+        .hero-text-container2.svelte-517vep.svelte-517vep {
+            background-color: var(--color-primary);
+            border-left: 2px solid var(--color-black);
+            border-radius: 10px;
+            padding: 3.13918px 0px;
+            margin-bottom: 7.92px;
+            position: relative;
+            height: 45px;
+            width: 148px
+        }
+
+        .hero-text-container2.svelte-517vep>h1.svelte-517vep {
+            position: absolute;
+            left: 10px;
+            width: 330px
+        }
+
+        @media(min-width: 1024px) {
+            .hero-text-container2.svelte-517vep.svelte-517vep {
+                width: 295px;
+                height: 85px;
+                border-radius: 15px
+            }
+
+            .hero-text-container2.svelte-517vep>h1.svelte-517vep {
+                width: 310px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-text-container2.svelte-517vep.svelte-517vep {
+                width: 350px;
+                height: 109px;
+                border-radius: 15px
+            }
+
+            .hero-text-container2.svelte-517vep>h1.svelte-517vep {
+                width: 820px
+            }
+        }
+
+        .container.svelte-h6z6f5.svelte-h6z6f5 {
+            background-color: var(--color-P400);
+            padding: var(--page-padding-mobile);
+            padding-top: 90px;
+            padding-bottom: 90px;
+            width: 100%
+        }
+
+        .container.svelte-h6z6f5 a.svelte-h6z6f5 {
+            display: flex;
+            align-items: center
+        }
+
+        @media(min-width: 768px) {
+            .container.svelte-h6z6f5.svelte-h6z6f5 {
+                padding: var(--page-padding-desktop);
+                padding-top: 90px;
+                padding-bottom: 90px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .container.svelte-h6z6f5.svelte-h6z6f5 {
+                padding-top: 140px;
+                padding-bottom: 140px;
+                margin: auto
+            }
+        }
+
+        .wrapper.svelte-h6z6f5>div.svelte-h6z6f5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        .wrapper.svelte-h6z6f5 h3.svelte-h6z6f5 {
+            text-align: center;
+            margin-bottom: 30px
+        }
+
+        .wrapper.svelte-h6z6f5 p.svelte-h6z6f5 {
+            text-align: center;
+            margin-bottom: 30px
+        }
+
+        @media(min-width: 768px) {
+            .wrapper.svelte-h6z6f5.svelte-h6z6f5 {
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding: var(--page-padding-desktop);
+                padding-top: 0;
+                padding-bottom: 0
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-h6z6f5.svelte-h6z6f5 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                max-width: var(--max-content-width-small-desktop);
+                margin: auto
+            }
+
+            .wrapper.svelte-h6z6f5 h3.svelte-h6z6f5 {
+                text-align: left
+            }
+
+            .wrapper.svelte-h6z6f5 p.svelte-h6z6f5 {
+                text-align: left
+            }
+
+            .wrapper.svelte-h6z6f5>div.svelte-h6z6f5 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-h6z6f5.svelte-h6z6f5 {
+                max-width: var(--max-content-width)
+            }
+        }
+
+        .content.svelte-h48ntd p {
+            padding-bottom: 30px
+        }
+
+        .content.svelte-h48ntd h3 {
+            padding-bottom: 30px
+        }
+
+        .heading.svelte-h48ntd {
+            text-align: center
+        }
+
+        p.heading.svelte-h48ntd {
+            padding-bottom: 60px
+        }
+
+        .heading-wrapper.svelte-h48ntd {
+            max-width: 954px;
+            margin: auto
+        }
+
+        @media(min-width: 1440px) {}
+
+        .content-group-mobile-wrapper.svelte-h48ntd {
+            display: grid;
+            grid-template-columns: 30px 1fr
+        }
+
+        .bar.svelte-h48ntd {
+            width: 5px;
+            background-color: var(--color-P400);
+            border-radius: 100px;
+            height: 97%
+        }
+
+        h3.svelte-h48ntd {
+            padding-left: 15px
+        }
+
+        h6.svelte-h48ntd {
+            margin-bottom: 10px
+        }
+
+        .container.svelte-h48ntd {
+            padding: var(--page-padding-mobile);
+            padding-top: 90px;
+            padding-bottom: 90px;
+            width: 100%
+        }
+
+        @media(min-width: 768px) {
+            .container.svelte-h48ntd {
+                padding: var(--page-padding-desktop);
+                padding-top: 90px;
+                padding-bottom: 90px
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .container.svelte-h48ntd {
+                padding: 0px;
+                padding-top: 140px;
+                padding-bottom: 220px;
+                margin: auto
+            }
+        }
+
+        @media(min-width: 768px) {
+            .wrapper.svelte-h48ntd {
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding: var(--page-padding-desktop);
+                padding-top: 0;
+                padding-bottom: 0
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-h48ntd {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-h48ntd {
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                max-width: var(--max-content-width);
+                margin: auto
+            }
+        }
+
+        .content-group-mobile.svelte-h48ntd {
+            position: relative
+        }
+
+        @media(min-width: 1024px) {
+            .content-group-mobile.svelte-h48ntd {
+                display: none
+            }
+        }
+
+        .content-group-desktop.svelte-h48ntd {
+            display: none
+        }
+
+        @media(min-width: 1024px) {
+            .content-group-desktop.svelte-h48ntd {
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 155px
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .content-group-2-desktop.svelte-h48ntd {
+                margin-top: 35px
+            }
+        }
+
+        @media(min-width:1440px) {
+            .p-medium.svelte-h48ntd {
+                margin-bottom: 20px
+            }
+        }
+
+        img#tree-desktop.svelte-h48ntd {
+            display: none
+        }
+
+        @media(min-width: 1440px) {
+            img#tree-desktop.svelte-h48ntd {
+                display: initial;
+                position: absolute;
+                left: 37%;
+                top: 1%;
+                transform: translate(-50%)
+            }
+        }
+
+        img#tree-small-desktop.svelte-h48ntd {
+            display: none
+        }
+
+        @media(min-width: 1024px) {
+            img#tree-small-desktop.svelte-h48ntd {
+                display: initial;
+                position: absolute;
+                left: 40%;
+                top: 1%;
+                transform: translate(-50%)
+            }
+        }
+
+        @media(min-width:1440px) {
+            img#tree-small-desktop.svelte-h48ntd {
+                display: none
+            }
+        }
+
+        .content.svelte-1m7fkq p {
+            text-align: center
+        }
+
+        .content.svelte-1m7fkq h3 {
+            padding-bottom: 30px;
+            text-align: center
+        }
+
+        .section-container.svelte-1m7fkq {
+            padding-bottom: 60px
+        }
+
+        .container.svelte-1m7fkq {
+            background-color: var(--color-G100);
+            padding-top: 90px;
+            padding-bottom: 90px;
+            width: 100%
+        }
+
+        @media(min-width: 768px) {
+            .container.svelte-1m7fkq {
+                padding-top: 90px;
+                padding-bottom: 90px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .container.svelte-1m7fkq {
+                padding: 0px;
+                padding-top: 140px;
+                padding-bottom: 140px;
+                margin: auto
+            }
+        }
+
+        .card-container-mobile.svelte-1m7fkq {
+            overflow: hidden;
+            margin: auto;
+            padding: 0 40px
+        }
+
+        @media(min-width: 1024px) {
+            .card-container-mobile.svelte-1m7fkq {
+                display: none
+            }
+        }
+
+        .card-container-desktop.svelte-1m7fkq {
+            display: none
+        }
+
+        @media(min-width: 1024px) {
+            .card-container-desktop.svelte-1m7fkq {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .card-container-desktop.svelte-1m7fkq {
+                gap: 33px
+            }
+        }
+
+        .siema.svelte-1m7fkq {
+            overflow: initial !important
+        }
+
+        .card-wrapper.svelte-1m7fkq {
+            margin-right: 20px;
+            height: 291px;
+            border: 2px solid var(--color-black);
+            border-radius: 15px
+        }
+
+        @media(min-width: 1024px) {
+            .card-wrapper.svelte-1m7fkq {
+                width: 280px;
+                margin-right: 0px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .card-wrapper.svelte-1m7fkq {
+                width: 370px;
+                margin-right: 0px
+            }
+        }
+
+        .card-title-wrapper.svelte-1m7fkq {
+            background-color: var(--color-primary);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 20px;
+            height: 75px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom: 2px solid var(--color-black);
+            gap: 20px
+        }
+
+        @media(min-width: 1440px) {
+            .card-title-wrapper.svelte-1m7fkq {
+                padding: 25px 20px;
+                height: 100px
+            }
+        }
+
+        img.svelte-1m7fkq {
+            height: 59px
+        }
+
+        .card-content-wrapper.svelte-1m7fkq {
+            padding: 20px 20px
+        }
+
+        .tag-pink-large.svelte-1m7fkq {
+            width: 245px;
+            margin: auto;
+            margin-bottom: 20px
+        }
+
+        @media(min-width: 1440px) {
+            .tag-pink-large.svelte-1m7fkq {
+                width: 330px
+            }
+        }
+
+        .bullet.svelte-1m7fkq {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px
+        }
+
+        @media(min-width: 1024px) {
+            .bullet.svelte-1m7fkq {
+                display: none
+            }
+        }
+
+        input.svelte-1m7fkq {
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: var(--color-G400);
+            transition: 0.2s all linear;
+            margin-right: 5px;
+            position: relative;
+            top: 4px
+        }
+
+        input.svelte-1m7fkq:checked {
+            background-color: var(--color-black)
+        }
+
+        @media(min-width: 768px) {
+            .content-header-wrapper.svelte-1m7fkq {
+                margin: auto;
+                max-width: var(--max-content-width-mobile)
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .content-header-wrapper.svelte-1m7fkq {
+                max-width: var(--max-content-width-small-desktop);
+                width: 100%;
+                margin: auto
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .content-header-wrapper.svelte-1m7fkq {
+                max-width: var(--max-content-width);
+                width: 100%;
+                margin: auto
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-1m7fkq {
+                max-width: var(--max-content-width-small-desktop);
+                width: 100%;
+                margin: auto
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-1m7fkq {
+                max-width: var(--max-content-width);
+                width: 100%;
+                margin: auto
+            }
+        }
+
+        .content-wrapper.svelte-1m7fkq {
+            padding: 0 18px;
+            max-width: var(--max-content-width-mobile);
+            margin: auto
+        }
+
+        @media(min-width: 768px) {
+            .content-wrapper.svelte-1m7fkq {
+                padding: var(--page-padding-desktop);
+                padding-top: 0px;
+                padding-bottom: 0px
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .content-wrapper.svelte-1m7fkq {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .content-wrapper.svelte-1m7fkq {
+                max-width: var(--max-content-width);
+                padding: 0;
+                margin: auto
+            }
+        }
+
+        .container.svelte-kc6mgc.svelte-kc6mgc {
+            padding: var(--page-padding-mobile);
+            padding-top: 90px;
+            padding-bottom: 90px;
+            width: 100%
+        }
+
+        .container.svelte-kc6mgc a.svelte-kc6mgc {
+            display: flex;
+            align-items: center
+        }
+
+        @media(min-width: 768px) {
+            .container.svelte-kc6mgc.svelte-kc6mgc {
+                padding: var(--page-padding-desktop);
+                padding-top: 90px;
+                padding-bottom: 90px
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .container.svelte-kc6mgc.svelte-kc6mgc {
+                padding-top: 140px;
+                padding-bottom: 140px;
+                margin: auto
+            }
+        }
+
+        .wrapper.svelte-kc6mgc.svelte-kc6mgc {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        .wrapper.svelte-kc6mgc h3.svelte-kc6mgc {
+            text-align: center;
+            margin-bottom: 30px
+        }
+
+        .wrapper.svelte-kc6mgc p.svelte-kc6mgc {
+            text-align: center;
+            margin-bottom: 60px
+        }
+
+        @media(min-width: 768px) {
+            .wrapper.svelte-kc6mgc.svelte-kc6mgc {
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding: var(--page-padding-desktop);
+                padding-top: 0;
+                padding-bottom: 0
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-kc6mgc.svelte-kc6mgc {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-kc6mgc.svelte-kc6mgc {
+                padding-left: 0px;
+                padding-right: 0px;
+                width: 100%;
+                max-width: var(--max-content-width);
+                max-width: 954px;
+                margin: auto
+            }
+        }
+
+        .section-container.svelte-14fdjq7.svelte-14fdjq7 {
+            display: grid;
+            background-color: var(--color-black);
+            padding: 65px 40px;
+            gap: 30px;
+            justify-content: center
+        }
+
+        @media(max-width: 768px) {
+            nav.svelte-14fdjq7.svelte-14fdjq7 {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 250px;
+                margin: auto;
+                justify-content: center
+            }
+        }
+
+        h6#links.svelte-14fdjq7 a.svelte-14fdjq7 {
+            color: var(--color-primary);
+            -webkit-text-decoration-line: none;
+            text-decoration-line: none
+        }
+
+        h6#links.svelte-14fdjq7 a.svelte-14fdjq7:hover {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline
+        }
+
+        p.svelte-14fdjq7.svelte-14fdjq7 {
+            color: var(--color-white) !important
+        }
+
+        span.svelte-14fdjq7.svelte-14fdjq7 {
+            display: flex;
+            justify-content: center
+        }
+
+        nav.svelte-14fdjq7.svelte-14fdjq7 {
+            display: flex;
+            gap: 1rem
+        }
+
+        nav.svelte-14fdjq7 .link.svelte-14fdjq7 {
+            border-color: transparent
+        }
+
+        nav.svelte-14fdjq7 .link.svelte-14fdjq7:hover {
+            border-color: initial
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-59c58af9">
+        <header class="svelte-jc1u8d">
+            <div class="header-container svelte-jc1u8d">
+                <div class="section-container svelte-jc1u8d">
+                    <div class="desktop-nav svelte-jc1u8d"><a href="/" class="logo svelte-jc1u8d"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686165013778unlok-logo2%20copy.svg" alt="logo" class="svelte-jc1u8d"></a>
+                        <nav style="display: flex; align-items:center;" class="svelte-jc1u8d">
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/personal">Personal</a>
+                            </h6>
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/business">Business</a>
+                            </h6>
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/investor">Investor</a>
+                            </h6>
+                            <a class="primary-small-button" id="nav" href="/portal">Get Started</a>
+                        </nav>
+                    </div>
+                    <div class="mobile-nav svelte-jc1u8d"><a href="/" class="logo svelte-jc1u8d"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686165013778unlok-logo2%20copy.svg" alt="logo" class="svelte-jc1u8d"></a>
+                        <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="37" height="37" viewBox="0 0 24 24" style="color:black;" class="iconify iconify--eva"><!-- HTML_TAG_START -->
+                                <g id="iconifySvelte0">
+                                    <g id="iconifySvelte1">
+                                        <g id="iconifySvelte2" fill="currentColor">
+                                            <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
+                                            <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
+                                            <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
+                                        </g>
+                                    </g>
+                                </g><!-- HTML_TAG_END -->
+                            </svg></button>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-5c8c203f">
+        <section>
+            <div class="hero-wrapper svelte-517vep">
+                <div class="hero-text-container1 svelte-517vep">
+                    <h1 class="svelte-517vep">Unlock Limitless </h1>
+                </div>
+                <div class="hero-text-container2 svelte-517vep">
+                    <h1 class="svelte-517vep">Rewards</h1>
+                </div>
+                <div class="hero-feature-container svelte-517vep"><img class="hero-image-1 svelte-517vep" src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686405726450investor-hero-text%20copy.svg" alt="Balance the Power of Unlok">
+                    <img class="hero-image-2 svelte-517vep" src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686163010000investor-banner.png" alt="Investor Banner">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-384d3127">
+        <div class="container svelte-h6z6f5">
+            <div class="wrapper svelte-h6z6f5">
+                <h3 class="svelte-h6z6f5">Revolutionize Loyalty Rewards</h3>
+                <div class="svelte-h6z6f5">
+                    <p class="p-large svelte-h6z6f5">At UNLOK, we believe that loyalty rewards should be a catalyst for growth and a driving force behind customer engagement. That's why we've created a platform that empowers businesses like yours to revolutionize their loyalty rewards programs and unlock a world of possibilities.</p>
+                    <a target="_blank" rel="noopener noreferrer" href="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/Whitepaper.pdf?t=2023-06-23T23%3A35%3A42.985Z" class="secondary-button svelte-h6z6f5">Whitepaper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-a17559ed">
+        <div class="container svelte-h48ntd">
+            <div class="wrapper svelte-h48ntd">
+                <div class="section-container content svelte-h48ntd">
+                    <div class="heading-wrapper svelte-h48ntd">
+                        <h3 class="heading svelte-h48ntd">Embrace the Decentralized Ecosystem</h3>
+                        <p class="heading p-large svelte-h48ntd">Experience the unparalleled power of UNLOK's blockchain technology. Seamlessly exchange and redeem loyalty points within our decentralized ecosystem. Earn UNLOK tokens with every transaction, gaining access to a world of tailored rewards that perfectly align with your preferences and lifestyle.</p>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="content-group-desktop svelte-h48ntd">
+                                <div class="content-group-1-desktop">
+                                    <h6 class="h600 svelte-h48ntd">Tokenization</h6>
+                                    <p class="p-medium svelte-h48ntd">Witness the ground-breaking potential of tokenization as we convert asset liabilities into a new user acquisition channel. Embrace independent and verifiable transactions that reshape how loyalty rewards are exchanged.</p>
+
+                                    <h6 class="h600 svelte-h48ntd">User-Friendly Setup</h6>
+                                    <p class="p-medium svelte-h48ntd">Join our ecosystem effortlessly with our self-service loyalty setup—no technical expertise required. Our industry-standard matching engine removes barriers, making it simple for everyone to participate.</p>
+
+                                    <h6 class="h600 svelte-h48ntd">Innovative Staking Mechanism</h6>
+                                    <p class="p-medium svelte-h48ntd">Unlock the potential for high yields and bonuses. Customize your staking journey with flexible duration and amounts, making profitability a truly personalized experience.</p>
+                                </div>
+
+                                <img id="tree-desktop" src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1687562212000investor-tree-1440.svg" alt="Investor Tree" class="svelte-h48ntd">
+                                <img id="tree-small-desktop" src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1687561600000investor-tree-1024.svg" alt="Investor Tree" class="svelte-h48ntd">
+
+                                <div class="content-group-2-desktop svelte-h48ntd">
+                                    <h6 class="h600 svelte-h48ntd">Scalability and Adaptability</h6>
+                                    <p class="p-medium svelte-h48ntd">Transitioning to UNLOK is seamless and hassle-free. Our experienced team will guide you through the integration process, ensuring a smooth transition from your existing rewards program to our robust decentralized ecosystem. Say goodbye to complex migrations and hello to a simplified and efficient process.</p>
+
+                                    <h6 class="h600 svelte-h48ntd">Game-Changing Partnership</h6>
+                                    <p class="p-medium svelte-h48ntd">Scaling is in our DNA. We're prepared to handle challenges head-on, integrating our marketplace with the NetCents app for lightning-fast onboarding. Partnerships with leading platforms ensure top-notch security and liquidity. As demand evolves, we'll transition to a decentralized and self-service model, constantly adapting to meet the needs of our users.</p>
+                                </div>
+                            </div>
+                            <div class="content-group-mobile-wrapper svelte-h48ntd">
+                                <div class="bar svelte-h48ntd"></div>
+                                <div class="content-group-mobile svelte-h48ntd">
+                                    <h6 class="h600 svelte-h48ntd">Tokenization</h6>
+                                    <p class="p-medium svelte-h48ntd">Witness the ground-breaking potential of tokenization as we convert asset liabilities into a new user acquisition channel. Embrace independent and verifiable transactions that reshape how loyalty rewards are exchanged.</p>
+
+                                    <h6 class="h600 svelte-h48ntd">User-Friendly Setup</h6>
+                                    <p class="p-medium svelte-h48ntd">Join our ecosystem effortlessly with our self-service loyalty setup—no technical expertise required. Our industry-standard matching engine removes barriers, making it simple for everyone to participate.</p>
+
+                                    <h6 class="h600 svelte-h48ntd">Game-Changing Partnership</h6>
+                                    <p class="p-medium svelte-h48ntd">Scaling is in our DNA. We're prepared to handle challenges head-on, integrating our marketplace with the NetCents app for lightning-fast onboarding. Partnerships with leading platforms ensure top-notch security and liquidity. As demand evolves, we'll transition to a decentralized and self-service model, constantly adapting to meet the needs of our users.</p>
+
+
+
+
+
+                                    <h6 class="h600 svelte-h48ntd">Scalability and Adaptability</h6>
+                                    <p class="p-medium svelte-h48ntd">Transitioning to UNLOK is seamless and hassle-free. Our experienced team will guide you through the integration process, ensuring a smooth transition from your existing rewards program to our robust decentralized ecosystem. Say goodbye to complex migrations and hello to a simplified and efficient process.</p>
+
+                                    <h6 class="h600 svelte-h48ntd">Innovative Staking Mechanism</h6>
+                                    <p class="p-medium svelte-h48ntd">Unlock the potential for high yields and bonuses. Customize your staking journey with flexible duration and amounts, making profitability a truly personalized experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-68c9be57">
+        <div class="container svelte-1m7fkq">
+            <div class="wrapper svelte-1m7fkq">
+                <div class="content-wrapper svelte-1m7fkq">
+                    <div class="content-header-wrapper svelte-1m7fkq">
+                        <div class="section-container content svelte-1m7fkq">
+                            <h3>Beyond Rewards</h3>
+                            <p class="p-large"></p>
+                        </div>
+                    </div>
+
+                    <div class="card-container-desktop svelte-1m7fkq">
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686002968000UnlokPay%20copy.svg" alt="UnlokPay" class="svelte-1m7fkq">
+                                <h6>UnlokPay</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Say goodbye to transaction charges and enjoy hassle-free payments with our pioneering payment facilitator service.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686003002000UnlokMarket%20copy.svg" alt="UnlokMarket" class="svelte-1m7fkq">
+                                <h6>UnlokMarket</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Discover an open-market e-commerce platform where cryptocurrencies can buy and sell a wide range of products, including exclusive NFTs and customized experiences.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686003079000UnlokGC%20copy.svg" alt="UnlokGC" class="svelte-1m7fkq">
+                                <h6>UnlokGC</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Instantly exchange UNLOK tokens for international gift cards, unlocking enticing discounts at popular retailers, electronics outlets, and restaurants.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686003097000UnlokDebit%20copy.svg" alt="UnlokDebit" class="svelte-1m7fkq">
+                                <h6>UnlokDebit</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Simplify your transactions with our secure debit card, consolidating UNLOK tokens and other cryptocurrencies for seamless convenience and global acceptance.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686760072000unlokreward.svg" alt="UnlokReward" class="svelte-1m7fkq">
+                                <h6>UnlokReward</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Holding UNLOK tokens opens the door to an array of passive rewards, such as discounted airfare, hotel stays, online shop vouchers, and exclusive NFTs, ensuring an exceptionally rewarding experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container-mobile svelte-1m7fkq">
+                    <div class="siema svelte-1m7fkq">
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686002968000UnlokPay%20copy.svg" alt="UnlokPay" class="svelte-1m7fkq">
+                                <h6>UnlokPay</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Say goodbye to transaction charges and enjoy hassle-free payments with our pioneering payment facilitator service.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686003002000UnlokMarket%20copy.svg" alt="UnlokMarket" class="svelte-1m7fkq">
+                                <h6>UnlokMarket</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Discover an open-market e-commerce platform where cryptocurrencies can buy and sell a wide range of products, including exclusive NFTs and customized experiences.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686003079000UnlokGC%20copy.svg" alt="UnlokGC" class="svelte-1m7fkq">
+                                <h6>UnlokGC</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Instantly exchange UNLOK tokens for international gift cards, unlocking enticing discounts at popular retailers, electronics outlets, and restaurants.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686003097000UnlokDebit%20copy.svg" alt="UnlokDebit" class="svelte-1m7fkq">
+                                <h6>UnlokDebit</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Simplify your transactions with our secure debit card, consolidating UNLOK tokens and other cryptocurrencies for seamless convenience and global acceptance.</p>
+                            </div>
+                        </div>
+                        <div class="card-wrapper slider svelte-1m7fkq">
+                            <div class="card-title-wrapper svelte-1m7fkq"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686760072000unlokreward.svg" alt="UnlokReward" class="svelte-1m7fkq">
+                                <h6>UnlokReward</h6>
+                            </div>
+                            <div class="card-content-wrapper svelte-1m7fkq">
+                                <p class="p-medium">Holding UNLOK tokens opens the door to an array of passive rewards, such as discounted airfare, hotel stays, online shop vouchers, and exclusive NFTs, ensuring an exceptionally rewarding experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="bullet svelte-1m7fkq"><input type="radio" aria-label="bullet" id="0" name="slider-radio" value="0" checked class="svelte-1m7fkq"><input type="radio" aria-label="bullet" id="1" name="slider-radio" value="1" class="svelte-1m7fkq"><input type="radio" aria-label="bullet" id="2" name="slider-radio" value="2" class="svelte-1m7fkq"><input type="radio" aria-label="bullet" id="3" name="slider-radio" value="3" class="svelte-1m7fkq"><input type="radio" aria-label="bullet" id="4" name="slider-radio" value="4" class="svelte-1m7fkq"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-005d0ea4">
+        <div class="container svelte-kc6mgc">
+            <div class="wrapper svelte-kc6mgc">
+                <h3 class="svelte-kc6mgc">Invest in the Future of Loyalty</h3>
+                <p class="p-large svelte-kc6mgc">Investing in UNLOK means investing in a future where loyalty rewards truly come to life. Our fair and sustainable tokenomics guarantee ongoing benefits for investors like you. Take advantage of this remarkable opportunity to shape the loyalty rewards landscape. Join us today and unlock the limitless potential of UNLOK. Together, we will redefine brand loyalty and propel the industry to new heights.</p>
+                <a href="https://unlokloyalty.com#contact-us" class="secondary-button svelte-kc6mgc">Contact us</a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-cbbbe77d">
+        <footer class="section-container svelte-14fdjq7">
+            <nav class="svelte-14fdjq7">
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="/tokenomics">Tokenomics</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="/privacy">Privacy Policy</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_blank" class="link svelte-14fdjq7" href="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/Whitepaper.pdf?t=2023-06-23T23%3A35%3A42.985Z">Whitepaper</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="https://unlokloyalty.com#contact-us">Contact Us</a>
+                </h6>
+            </nav>
+            <span class="svelte-14fdjq7">
+                <p id="copyright" class="p-small svelte-14fdjq7">© 2023 UNLOK. All rights reserved.</p>
+            </span>
+        </footer>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>

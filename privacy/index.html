@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <title>UNLOK Loyalty | Privacy</title><!-- HEAD_svelte-1mk00iu_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=IBM+Plex+Mono:wght@500;700&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1687548555125UNLOK%20-%20Transparent%20Icon_FINAL.png">
+    <meta charset="UTF-8">
+    <meta name="description" content="Unleash the Power of Blockchain Rewards">
+    <meta name="keywords" content="Blockchain, Crypto, Cryptocurrency, Unlok, Rewards, Staking, Loyalty Program, Earn, Redeem">
+    <meta name="author" content="Unlok Loyalty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        :root {
+            /* Fonts  */
+            --font-heading: 'Fraunces', serif;
+            --font-body: 'IBM Plex Mono', monospace;
+            --font-text: 'Work Sans', sans-serif;
+
+            /* Colors */
+            --color-Y500: #E9D90A;
+            --color-Y400: #F6E500;
+            --color-Y300: #F7D254;
+            --color-Y200: #FFF587;
+            --color-Y100: #FFFCDA;
+
+            --color-P500: #E82884;
+            --color-P400: #FF4FA3;
+            --color-P300: #FF74B7;
+            --color-P200: #FFB1D7;
+            --color-P100: #FFD6E9;
+
+            --color-T500: #50ADBE;
+            --color-T400: #69C9DB;
+            --color-T300: #A8E1EC;
+            --color-T200: #C2F1FA;
+            --color-T100: #E2FAFF;
+
+            --color-G500: #C8C9DC;
+            --color-G400: #D5D7EF;
+            --color-G300: #E6E7FB;
+            --color-G200: #EEF2FD;
+            --color-G100: #F4F9FC;
+
+            --color-black: #000000;
+            --color-white: #FFFFFF;
+
+            /* Base values */
+            --color-primary: var(--color-Y400);
+            --color-secondary: var(--color-P400);
+            --color-tertiary: var(--color-black);
+            --color-tertiary: var(--color-white);
+
+            /* --color: var(--color-base);
+  --box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --border-color: #eee;
+  --background: white; */
+            --border: 0.851905px solid var(--color-black);
+            --border-radius: 4.25952px;
+            --max-content-width-mobile: 768px;
+            --max-content-width-small-desktop: 900px;
+            --max-content-width: 1200px;
+            --page-padding-desktop: 90px 80px;
+            --page-padding-small-desktop: 120px 60px;
+            --page-padding-mobile: 90px 18px;
+
+            --hero-padding-desktop: 150px 80px 90px 80px;
+            --hero-padding-large-desktop: 200px 80px 90px 80px;
+
+            --hero-padding-mobile: 100px 18px 90px 18px;
+            --content-padding: 0px 50px;
+
+        }
+
+
+        #page a {
+            color: var(--color-black);
+        }
+
+
+        #page h1,
+        #page h2,
+        #page h3,
+        #page h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--color-black);
+        }
+
+
+        #page h1 {
+            font-size: 33px;
+            line-height: 39px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h1 {
+                font-size: 67px;
+                line-height: 69px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h1 {
+                font-size: 83px;
+                line-height: 93px
+            }
+        }
+
+
+        #page h2 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h2 {
+                font-size: 55px;
+                line-height: 65px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h2 {
+                font-size: 65px;
+                line-height: 75px
+            }
+        }
+
+
+        #page h3 {
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h3 {
+                font-size: 45px;
+                line-height: 57px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h3 {
+                font-size: 55px;
+                line-height: 68px
+            }
+        }
+
+
+        #page h4 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h4 {
+                font-size: 37px;
+                line-height: 50px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h4 {
+                font-size: 45px;
+                line-height: 58px
+            }
+        }
+
+
+        #page h5,
+        #page h6,
+        #page .h650,
+        #page .h700,
+        #page .h800,
+        #page .h900,
+        #page .h950 {
+            font-family: var(--font-body);
+            color: var(--color-black);
+        }
+
+
+        #page h5 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h5 {
+                font-size: 30px;
+                line-height: 39px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h5 {
+                font-size: 30px;
+                line-height: 39px
+            }
+        }
+
+
+        #page h6 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page h6 {
+                font-size: 21px;
+                line-height: 29px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page h6 {
+                font-size: 25px;
+                line-height: 33px
+            }
+        }
+
+
+        #page .h650 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h650 {
+                font-size: 21px;
+                line-height: 29px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h650 {
+                font-size: 25px;
+                line-height: 33px
+            }
+        }
+
+
+        #page .h700 {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h700 {
+                font-size: 16px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h700 {
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .h800 {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h800 {
+                font-size: 12px;
+                line-height: 16px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h800 {
+                font-size: 17px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .h900 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h900 {
+                font-size: 14px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h900 {
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .h950 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .h950 {
+                font-size: 14px;
+                line-height: 20px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .h950 {
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page p {
+            font-family: var(--font-text);
+            font-weight: 400;
+            color: var(--color-black);
+        }
+
+
+        #page .p-large {
+            font-size: 17px;
+            line-height: 26px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-large {
+                font-size: 18px;
+                line-height: 28px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-large {
+                font-size: 20px;
+                line-height: 31px
+            }
+        }
+
+
+        #page .p-medium {
+            font-size: 15px;
+            line-height: 22px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-medium {
+                font-size: 15px;
+                line-height: 22px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-medium {
+                font-size: 17px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .p-small {
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+
+        @media only screen and (min-width: 1024px) {
+
+
+            #page .p-small {
+                font-size: 15px;
+                line-height: 22px
+            }
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .p-small {
+                font-size: 14px;
+                line-height: 18px
+            }
+        }
+
+
+        #page .link {
+            color: var(--color-P500);
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+
+
+        #page .link:hover {
+            -webkit-text-decoration-line: unset;
+            text-decoration-line: unset;
+        }
+
+
+        #page .link:active {
+            color: var(--color-P300);
+        }
+
+
+        #page .link:visited {
+            color: var(--color-P500);
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+
+
+        #page .tag-pink-large,
+        #page .tag-yellow-large,
+        #page .tag-lightyellow-large {
+            border-width: 2px;
+            border: var(--border);
+            border-radius: var(--border-radius);
+            padding: 0px 12.7786px;
+            gap: 8.52px;
+            height: 34.52px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .tag-pink-large,
+            #page .tag-yellow-large,
+            #page .tag-lightyellow-large {
+                height: 41.52px
+            }
+        }
+
+
+        #page .tag-pink-small,
+        #page .tag-yellow-small,
+        #page .tag-lightyellow-small {
+            border-width: 2px;
+            border: var(--border);
+            border-radius: var(--border-radius);
+            padding: 0px 10px;
+            gap: 8.52px;
+            height: 32px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            display: flex;
+            align-items: center;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .tag-pink-small,
+            #page .tag-yellow-small,
+            #page .tag-lightyellow-small {
+                height: 37px
+            }
+        }
+
+
+        #page .tag-pink-large {
+            background-color: var(--color-secondary);
+        }
+
+
+        #page .tag-pink-small {
+            background-color: var(--color-secondary);
+        }
+
+
+        #page .tag-yellow-large {
+            background-color: var(--color-primary);
+        }
+
+
+        #page .tag-yellow-small {
+            background-color: var(--color-primary);
+        }
+
+
+        #page .tag-lightyellow-large {
+            background-color: var(--color-Y100);
+        }
+
+
+        #page .tag-lightyellow-small {
+            background-color: var(--color-Y100);
+        }
+
+
+        #page .primary-large-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            /* height: 60px; */
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 20px 35px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            border: 2px solid var(--color-black);
+            transition: all 0.5s;
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .primary-large-button {
+                padding: 25px 40px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+
+
+        #page .primary-large-button:hover {
+            background: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+
+
+        #page .primary-large-button:active {
+            margin: -1px;
+            border: 3px solid var(--color-black);
+        }
+
+
+        #page .primary-small-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            /* height: 40px; */
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: 10px 25px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            transition: all 0.5s;
+            border: 2px solid var(--color-black);
+        }
+
+
+        @media only screen and (min-width: 1440px) {
+
+
+            #page .primary-small-button {
+                padding: 15px 40px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px
+            }
+        }
+
+
+        #page .primary-small-button:hover {
+            background: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+
+
+        #page .primary-small-button:active {
+            margin: -1px;
+            border: 3px solid var(--color-black);
+        }
+
+
+        #page .secondary-button {
+            font-family: var(--font-body);
+            color: var(--color-black);
+            border-radius: 100px;
+            height: 52px;
+            border: 3px solid var(--color-black);
+            color: var(--color-black);
+            transition: all 0.5s;
+            padding: 15px 34px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 22px;
+            background: transparent;
+        }
+
+
+        #page .secondary-button:hover {
+            background: var(--color-black);
+            color: var(--color-white);
+        }
+
+
+        #page .secondary-button:active {
+            background: var(--color-G500);
+            border-color: var(--color-G500);
+        }
+    </style><!-- HEAD_svelte-1mk00iu_END -->
+    <style>
+        header.svelte-jc1u8d.svelte-jc1u8d {
+            width: 100%;
+            max-width: 1700px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 0;
+            z-index: 7;
+            background-color: transparent
+        }
+
+        a#nav-item.svelte-jc1u8d.svelte-jc1u8d:hover {
+            color: var(--color-P500);
+            transition: all 0.2s
+        }
+
+        a.inactive-link.svelte-jc1u8d.svelte-jc1u8d {
+            padding: 5px 0px
+        }
+
+        @media(max-width: 767px) {
+            a.inactive-link.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 5px 10px
+            }
+        }
+
+        a.active-link.svelte-jc1u8d.svelte-jc1u8d {
+            color: var(--color-black) !important;
+            border-bottom: 2px solid var(--color-black) !important;
+            padding: 5px 0px
+        }
+
+        @media(max-width: 767px) {
+            a.active-link.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 5px 10px;
+                background-color: var(--color-G200) !important;
+                border-bottom: 1px solid var(--color-black) !important
+            }
+        }
+
+        .header-container.svelte-jc1u8d.svelte-jc1u8d {
+            max-width: 1440px;
+            margin: auto;
+            padding: var(--page-padding-mobile);
+            padding-top: 0;
+            padding-bottom: 0;
+            position: relative
+        }
+
+        @media(min-width: 768px) {
+            .header-container.svelte-jc1u8d.svelte-jc1u8d {
+                padding: 0px 40px
+            }
+        }
+
+        @media(min-width: 1440px) {}
+
+        @media(max-width: 767px) {
+            img.svelte-jc1u8d.svelte-jc1u8d {
+                width: 90px
+            }
+        }
+
+        .section-container.svelte-jc1u8d.svelte-jc1u8d {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem
+        }
+
+        @media(min-width: 768px) {}
+
+        @media(min-width: 1440px) {}
+
+        .logo.svelte-jc1u8d.svelte-jc1u8d {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-jc1u8d.svelte-jc1u8d {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-jc1u8d nav.svelte-jc1u8d {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.95rem
+        }
+
+        @media(min-width: 768px) {
+            .desktop-nav.svelte-jc1u8d.svelte-jc1u8d {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-jc1u8d.svelte-jc1u8d {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 768px) {
+            .mobile-nav.svelte-jc1u8d.svelte-jc1u8d {
+                display: none
+            }
+        }
+
+        #popup.svelte-jc1u8d.svelte-jc1u8d {
+            color: var(--color-black);
+            font-size: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            inset: 0rem 0rem 0rem 6rem;
+            height: 100vh;
+            bottom: initial;
+            padding: 2rem;
+            padding-top: 5rem;
+            z-index: 3;
+            box-shadow: -10px 0px 16px 4px rgba(0, 0, 0, 0.13)
+        }
+
+        #popup.svelte-jc1u8d button#close.svelte-jc1u8d {
+            position: absolute;
+            right: 1.5rem;
+            top: 2rem
+        }
+
+        .hero-wrapper.svelte-nv92w4.svelte-nv92w4 {
+            max-width: 1200px;
+            margin: auto;
+            width: 100%
+        }
+
+        .hero-wrapper.svelte-nv92w4 h1.svelte-nv92w4,
+        .hero-wrapper.svelte-nv92w4 h6.svelte-nv92w4 {
+            margin-bottom: 30px;
+            text-align: center
+        }
+
+        @media(min-width: 768px) {
+            .hero-wrapper.svelte-nv92w4.svelte-nv92w4 {
+                padding: 0px 50px;
+                margin: auto;
+                max-width: var(--max-content-width-mobile)
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .hero-wrapper.svelte-nv92w4.svelte-nv92w4 {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-wrapper.svelte-nv92w4.svelte-nv92w4 {
+                max-width: var(--max-content-width);
+                margin: auto
+            }
+        }
+
+        .hero-container.svelte-nv92w4.svelte-nv92w4 {
+            background-color: var(--color-G100);
+            padding: var(--hero-padding-mobile);
+            position: relative
+        }
+
+        @media(min-width: 768px) {
+            .hero-container.svelte-nv92w4.svelte-nv92w4 {
+                padding: var(--hero-padding-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .hero-container.svelte-nv92w4.svelte-nv92w4 {
+                padding: var(--hero-padding-large-desktop);
+                padding-bottom: 150px
+            }
+        }
+
+        .p-large.svelte-nv92w4.svelte-nv92w4 {
+            text-align: center
+        }
+
+        .wrapper.svelte-6db1kc li {
+            padding-bottom: 20px;
+            padding-left: 30px
+        }
+
+        .wrapper.svelte-6db1kc h6 {
+            padding-bottom: 20px
+        }
+
+        .wrapper.svelte-6db1kc {
+            padding: var(--page-padding-mobile);
+            width: 100%
+        }
+
+        @media(min-width: 768px) {
+            .wrapper.svelte-6db1kc {
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding: var(--page-padding-desktop)
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-6db1kc {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-6db1kc {
+                padding-left: 0px;
+                padding-right: 0px;
+                max-width: var(--max-content-width);
+                margin: auto
+            }
+        }
+
+        .wrapper.svelte-gyev31 p {
+            padding-bottom: 20px
+        }
+
+        .wrapper.svelte-gyev31 h6 {
+            padding-bottom: 20px
+        }
+
+        .wrapper.svelte-gyev31 {
+            padding: var(--page-padding-mobile);
+            padding-top: 0;
+            width: 100%
+        }
+
+        @media(min-width: 768px) {
+            .wrapper.svelte-gyev31 {
+                margin: auto;
+                max-width: var(--max-content-width-mobile);
+                padding: var(--page-padding-desktop);
+                padding-top: 0
+            }
+        }
+
+        @media(min-width: 1024px) {
+            .wrapper.svelte-gyev31 {
+                max-width: var(--max-content-width-small-desktop);
+                padding-left: 0;
+                padding-right: 0
+            }
+        }
+
+        @media(min-width: 1440px) {
+            .wrapper.svelte-gyev31 {
+                padding-left: 0px;
+                padding-right: 0px;
+                max-width: var(--max-content-width);
+                margin: auto;
+                width: 100%
+            }
+        }
+
+        a.svelte-gyev31 {
+            padding-left: 5px
+        }
+
+        .section-container.svelte-14fdjq7.svelte-14fdjq7 {
+            display: grid;
+            background-color: var(--color-black);
+            padding: 65px 40px;
+            gap: 30px;
+            justify-content: center
+        }
+
+        @media(max-width: 768px) {
+            nav.svelte-14fdjq7.svelte-14fdjq7 {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 250px;
+                margin: auto;
+                justify-content: center
+            }
+        }
+
+        h6#links.svelte-14fdjq7 a.svelte-14fdjq7 {
+            color: var(--color-primary);
+            -webkit-text-decoration-line: none;
+            text-decoration-line: none
+        }
+
+        h6#links.svelte-14fdjq7 a.svelte-14fdjq7:hover {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline
+        }
+
+        p.svelte-14fdjq7.svelte-14fdjq7 {
+            color: var(--color-white) !important
+        }
+
+        span.svelte-14fdjq7.svelte-14fdjq7 {
+            display: flex;
+            justify-content: center
+        }
+
+        nav.svelte-14fdjq7.svelte-14fdjq7 {
+            display: flex;
+            gap: 1rem
+        }
+
+        nav.svelte-14fdjq7 .link.svelte-14fdjq7 {
+            border-color: transparent
+        }
+
+        nav.svelte-14fdjq7 .link.svelte-14fdjq7:hover {
+            border-color: initial
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-a0d9ae12">
+        <header class="svelte-jc1u8d">
+            <div class="header-container svelte-jc1u8d">
+                <div class="section-container svelte-jc1u8d">
+                    <div class="desktop-nav svelte-jc1u8d"><a href="/" class="logo svelte-jc1u8d"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686165013778unlok-logo2%20copy.svg" alt="logo" class="svelte-jc1u8d"></a>
+                        <nav style="display: flex; align-items:center;" class="svelte-jc1u8d">
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/personal">Personal</a>
+                            </h6>
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/business">Business</a>
+                            </h6>
+                            <h6 class="h950"><a id="nav-item" class="inactive-link svelte-jc1u8d" href="/investor">Investor</a>
+                            </h6>
+                            <a class="primary-small-button" id="nav" href="/portal">Get Started</a>
+                        </nav>
+                    </div>
+                    <div class="mobile-nav svelte-jc1u8d"><a href="/" class="logo svelte-jc1u8d"><img src="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/1686165013778unlok-logo2%20copy.svg" alt="logo" class="svelte-jc1u8d"></a>
+                        <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="37" height="37" viewBox="0 0 24 24" style="color:black;" class="iconify iconify--eva"><!-- HTML_TAG_START -->
+                                <g id="iconifySvelte0">
+                                    <g id="iconifySvelte1">
+                                        <g id="iconifySvelte2" fill="currentColor">
+                                            <rect width="18" height="2" x="3" y="11" rx=".95" ry=".95" />
+                                            <rect width="18" height="2" x="3" y="16" rx=".95" ry=".95" />
+                                            <rect width="18" height="2" x="3" y="6" rx=".95" ry=".95" />
+                                        </g>
+                                    </g>
+                                </g><!-- HTML_TAG_END -->
+                            </svg></button>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-460c1552">
+        <div class="hero-container svelte-nv92w4">
+            <div class="hero-wrapper svelte-nv92w4">
+                <h1 class="svelte-nv92w4">Privacy Policy</h1>
+                <h6 class="h700 svelte-nv92w4">Effective Date: May 1, 2023</h6>
+                <p class="p-large svelte-nv92w4">At UNLOK, we are committed to protecting your privacy and safeguarding the personal information of our users and business partners. This Privacy Policy outlines how we collect, use, disclose, and protect your data when you interact with our blockchain rewards platform and related services. We encourage you to read this policy carefully to understand our practices regarding your personal information.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-0cd99f3a">
+        <div class="wrapper svelte-6db1kc">
+            <ol>
+                <section id="1">
+                    <h6 class="h700">1. Information We Collect</h6>
+                    <ul>
+                        <li class="p-medium">a. Personal Information from Users: When you create an account with UNLOK, we may collect personal information such as your name, email address, contact details, and other relevant information you provide to us during the registration process. To enhance your user experience and improve our services, we may collect information related to your transactions, rewards earned, preferences, and interactions with our platform.</li>
+                        <li class="p-medium">b. Personal Information from Businesses: If you are a business partner or service provider, we may collect personal information such as your name, email address, company details, and other necessary information to establish and maintain a business relationship.</li>
+                        <li class="p-medium">c. Usage Information: When you access our platform, we automatically collect certain information about your usage patterns, browsing activities, IP address, device information, and other similar data. This information is used to analyze and improve the performance and functionality of our platform.</li>
+                    </ul>
+                </section>
+
+                <section id="2">
+                    <h6 class="h700">2. Use of Information</h6>
+                    <ul>
+                        <li class="p-medium">a. Providing and Improving Services: We use the information we collect to provide, maintain, and improve our blockchain rewards platform and related services. Your personal information helps us personalize your experience, facilitate transactions, communicate with you, and address any inquiries or support requests.</li>
+                        <li class="p-medium">b. Rewards and Loyalty Programs: The data we collect enables us to effectively administer rewards and loyalty programs, allowing users to earn, redeem, and manage their rewards within our platform.</li>
+                        <li class="p-medium">c. Communication: We may use your personal information to communicate with you and provide updates, promotional offers, and other relevant information about our services. You can choose to opt out of receiving promotional communications at any time.</li>
+                        <li class="p-medium">d. Business Relationships: If you are a business partner or service provider, we may use your personal information to establish, manage, and maintain our business relationship, including fulfilling contractual obligations, processing payments, and providing customer support.</li>
+                    </ul>
+                </section>
+
+                <section id="3">
+                    <h6 class="h700">3. Data Sharing and Disclosure</h6>
+                    <ul>
+                        <li class="p-medium">a. Third-Party Service Providers: We may engage trusted third-party service providers to assist us in delivering our services, such as payment processors, analytics providers, and customer support services. These providers are bound by strict confidentiality obligations and are only authorized to use your personal information as necessary to perform the requested services.</li>
+                        <li class="p-medium">b. Compliance with Legal Obligations: We may disclose your personal information if required by law, regulation, or legal process or in response to a valid request from law enforcement authorities, government agencies, or regulatory bodies.</li>
+                    </ul>
+                </section>
+
+                <section id="4">
+                    <h6 class="h700">4. Data Security</h6>
+                    <ul>
+                        <li class="p-medium">a. Data Protection Measures: We employ industry-standard security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. These measures include encryption, access controls, firewalls, and regular security assessments.</li>
+                        <li class="p-medium">b. User Responsibilities: While we strive to protect your personal information, it is essential for users to maintain the security and confidentiality of their account credentials and exercise caution when sharing personal information online.</li>
+                    </ul>
+                </section>
+
+                <section id="5">
+                    <h6 class="h700">5. Your Rights and Choices</h6>
+                    <ul>
+                        <li class="p-medium">a. Access, Update, and Deletion: You have the right to access, update, correct, or delete your personal information held by us. You can manage your account settings and preferences within our platform or contact us using the information provided below.</li>
+                        <li class="p-medium">b. Marketing Communications: You have the option to opt out of receiving marketing communications from us. You can exercise this choice by following the unsubscribe instructions in our communications or contacting us directly.</li>
+                    </ul>
+                </section>
+
+                <section id="6">
+                    <h6 class="h700">6. Links to Third-Party Websites</h6>
+                    <ul>
+                        <li class="p-medium">a. Third-Party Websites and Services: Our platform may contain links to third-party websites or services that are not operated or controlled by us. This Privacy Policy does not apply to those third-party websites, and we encourage you to review the privacy policies of such websites before providing any personal information.</li>
+                    </ul>
+                </section>
+
+                <section id="7">
+                    <h6 class="h700">7. Changes to this Privacy Policy</h6>
+                    <ul>
+                        <li class="p-medium">a. Policy Updates: We reserve the right to update or modify this Privacy Policy anytime. Any changes will be effective upon posting the revised policy on our platform. We encourage you to review this policy periodically to stay informed about our privacy practices.</li>
+                    </ul>
+                </section>
+            </ol>
+        </div>
+    </div>
+    <div class="section" id="section-05d7debc">
+        <div class="wrapper svelte-gyev31">
+            <h6 class="h700">Contact Us</h6>
+            <p class="p-medium">If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact us at:</p>
+            <p class="p-medium"><strong>Email:</strong><a class="link svelte-gyev31" href="mailto:info@unlokloyalty.com">info@unlokloyalty.com</a></p>
+            <p class="p-medium">Last updated: May 24, 2023</p>
+        </div>
+    </div>
+    <div class="section" id="section-dabd6025">
+        <footer class="section-container svelte-14fdjq7">
+            <nav class="svelte-14fdjq7">
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="/tokenomics">Tokenomics</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="/privacy">Privacy Policy</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_blank" class="link svelte-14fdjq7" href="https://dcutvpoezjrllqtfzyhv.supabase.co/storage/v1/object/public/images/80af99af-577e-467b-a42c-328f39dc7934/Whitepaper.pdf?t=2023-06-23T23%3A35%3A42.985Z">Whitepaper</a>
+                </h6>
+                <h6 id="links" class="h950 svelte-14fdjq7"><a target="_self" class="link svelte-14fdjq7" href="https://unlokloyalty.com#contact-us">Contact Us</a>
+                </h6>
+            </nav>
+            <span class="svelte-14fdjq7">
+                <p id="copyright" class="p-small svelte-14fdjq7">© 2023 UNLOK. All rights reserved.</p>
+            </span>
+        </footer>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
